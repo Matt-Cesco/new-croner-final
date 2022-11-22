@@ -1,0 +1,28 @@
+{
+  "name": "croner-datocms-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "^13.0.4",
+    "@radix-ui/react-icons": "^1.1.1",
+    "@radix-ui/react-navigation-menu": "^1.1.1",
+    "eslint-config-next": "13.0.4",
+    "graphql-request": "^5.0.0",
+    "next": "13.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.28.0",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  }
+}
