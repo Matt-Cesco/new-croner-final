@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }) {
       <Script
         id="google-tag"
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.envNEXT_PUBLIC_GOOGLE_ANALITYCS}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-45E6DTPQCV`}
       />
 
       <Script id="google-analytics" strategy="afterInteractive">
@@ -23,7 +23,7 @@ export default function MyApp({ Component, pageProps }) {
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
 
-         gtag('config', ${process.envNEXT_PUBLIC_GOOGLE_ANALITYCS});
+         gtag('config', 'G-45E6DTPQCV');
       `}
       </Script>
       <main className={poppins.className}>
