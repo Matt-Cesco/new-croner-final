@@ -12,12 +12,13 @@ const poppins = Poppins({
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Script id="google-tag" strategy="lazyOnload">
-        src=
-        {`https://www.googletagmanager.com/gtag/js?id=${process.envNEXT_PUBLIC_GOOGLE_ANALITYCS}`}
-      </Script>
+      <Script
+        id="google-tag"
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.envNEXT_PUBLIC_GOOGLE_ANALITYCS}`}
+      />
 
-      <Script id="google-analytics" strategy="lazyOnload">
+      <Script id="google-analytics" strategy="afterInteractive">
         {` window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
