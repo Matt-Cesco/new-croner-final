@@ -18,7 +18,7 @@ export default function MyApp({ Component, pageProps }) {
         src={`https://www.googletagmanager.com/gtag/js?id=G-45E6DTPQCV`}
       />
 
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analy" strategy="afterInteractive">
         {` window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());

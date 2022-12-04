@@ -84,7 +84,7 @@ query {
 }
 `;
 
-export async function getStaticProps () {
+export async function getStaticPaths () {
    const endpoint = "https://graphql.datocms.com";
    const graphQLClient = new GraphQLClient(endpoint, {
       headers: {
