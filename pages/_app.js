@@ -14,11 +14,11 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Script
         id="google-analytics"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-45E6DTPQCV`}
       />
 
-      <Script id="google-analy" strategy="afterInteractive">
+      <Script id="google-analy" strategy="lazyOnload">
         {` window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
