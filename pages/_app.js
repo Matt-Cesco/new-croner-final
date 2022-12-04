@@ -26,7 +26,7 @@ export default function MyApp({ Component, pageProps }) {
          gtag('config', 'G-45E6DTPQCV');
       `}
       </Script>
-      <Script id="hotjar-script" strategy="lazyOnload">
+      <Script id="hotjar-script">
         {` (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:3275002,hjsv:6};
@@ -35,6 +35,23 @@ export default function MyApp({ Component, pageProps }) {
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); `}
+      </Script>
+      <Script id="ruler-script">
+        {`
+         var __raconfig = __raconfig || {};
+         __raconfig.uid = '< YOUR SITE ID >';
+         __raconfig.action = 'track';
+
+         (function () {
+
+         var ra = document.createElement('script');
+         ra.type = 'text/javascript';
+         ra.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.ruleranalytics.com/lib/1.0/ra-bootstrap.js.php';
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(ra, s);
+
+         }());
+         `}
       </Script>
       <main className={poppins.className}>
         <Component {...pageProps} />
