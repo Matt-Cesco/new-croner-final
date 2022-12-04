@@ -9,7 +9,7 @@ import LandingPage from "./LandingPage";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div className="w-full">
     <LandingPage />
     <SupportBusiness />
     <Event />

@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const LandingPageRecord = ({ details }) => {
   return (
-    <div className="hero-container bg-primary">
-      <div className="max-w-screen-xl flex flex-col-reverse md:flex-row items-center px-6 py-4 md:py-28 mx-auto">
+    <div className="bg-primary w-full">
+      <div className="max-w-screen-xl flex flex-col-reverse md:flex-row items-center px-6 py-24 md:py-32 mx-auto">
         <div className="flex flex-col mb-32 md:w-1/2">
           <h1 className="max-w-xl text-4xl text-yellow font-bold md:text-5xl md:textleft pt-24">
             {details.bigTitleH1}

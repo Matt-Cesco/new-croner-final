@@ -29,7 +29,7 @@ const Navbar = () => {
             <SecondNavbar />
           </div>
           <div className="">
-            <div className="flex justify-end fs-xsm hidden md:block">call our free helpline today on:</div>
+            <div className="justify-end fs-xsm hidden md:block">call our free helpline today on:</div>
             <div className="btn-primary-tr fs-xl hidden md:block">0800 141 3912</div>
           </div>
           {/* Mobile Button */}
