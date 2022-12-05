@@ -26,15 +26,22 @@ export default function MyApp({ Component, pageProps }) {
          gtag('config', 'G-45E6DTPQCV');
       `}
       </Script>
-      <Script id="hotjar-script">
-        {` (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:3275002,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); `}
+      <Script id="bing-script">
+        {` function main() {
+            var iterator = AdsApp.keywords()
+               .orderBy("Impressions ASC")
+               .forDateRange("LAST_WEEK")
+               .withLimit(15)  // up to 15
+               .get();
+
+            Logger.log("15 keywords with the least impressions over the last week");
+
+            while (iterator.hasNext()) {
+               var keyword = iterator.next();
+               Logger.log(``);
+            }
+         } 
+         `}
       </Script>
       <Script id="ruler-script">
         {`
