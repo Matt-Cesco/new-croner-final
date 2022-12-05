@@ -26,25 +26,6 @@ export default function MyApp({ Component, pageProps }) {
          gtag('config', 'G-45E6DTPQCV');
       `}
       </Script>
-      <Script id="bing-script">
-        {` 
-            function main() {
-               var iterator = AdsApp.keywords()
-                  .orderBy("Impressions ASC")
-                  .forDateRange("LAST_WEEK")
-                  .withLimit(15)  // up to 15
-                  .get();
-
-               Logger.log("15 keywords with the least impressions over the last week");
-
-               while (iterator.hasNext()) {
-                  var keyword = iterator.next();
-                  Logger.log(``);  //writes the number of impressions
-               }
-            }
-         
-         `}
-      </Script>
       <Script id="ruler-script">
         {`
          var __raconfig = __raconfig || {};
