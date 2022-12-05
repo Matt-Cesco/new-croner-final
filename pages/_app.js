@@ -27,7 +27,7 @@ export default function MyApp({ Component, pageProps }) {
       `}
       </Script>
       <Script id="bing-script">
-        {` function main() {
+        {` 
             var iterator = AdsApp.keywords()
                .orderBy("Impressions ASC")
                .forDateRange("LAST_WEEK")
@@ -40,7 +40,7 @@ export default function MyApp({ Component, pageProps }) {
                var keyword = iterator.next();
                Logger.log(``);
             }
-         } 
+         
          `}
       </Script>
       <Script id="ruler-script">
