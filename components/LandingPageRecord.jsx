@@ -10,7 +10,7 @@ const LandingPageRecord = ({ details }) => {
             {details.bigTitleH1}
           </h1>
           <h2 className="max-w-xl text-2xl md:text-4xl text-white md:textleft pt-6">
-            {details.subtitleh2}
+            {details.subtitleH2}
           </h2>
           <p className="max-w-sm text-white pt-6 md:pt-12">Trustpilot Excellent</p>
           <div className="flex flex-col md:flex-row pt-12">
