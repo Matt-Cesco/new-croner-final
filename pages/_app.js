@@ -48,7 +48,7 @@ export default function MyApp({ Component, pageProps }) {
             document.getElementsByTagName('head')[0].appendChild(s);
             })();`}
       </Script>
-      <Script id="ruler-script">
+      <Script id="ruler-script" strategy="lazyOnload">
         {`
          var __raconfig = __raconfig || {};
          __raconfig.uid = '< YOUR SITE ID >';
