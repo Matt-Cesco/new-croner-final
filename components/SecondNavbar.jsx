@@ -1,19 +1,19 @@
-import React from 'react';
-import * as NavigationMenu from '@radix-ui/react-navigation-menu';
+import React from "react";
+import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 
-import { CaretDownIcon } from '@radix-ui/react-icons';
-import Link from 'next/link';
+import { CaretDownIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
-const NavigationMenuDemo = () => {
+const SecondNavbar = () => {
   return (
-    <NavigationMenu.Root className="hidden sm:flex">
-      <NavigationMenu.List className="flex px-3">
-        <NavigationMenu.Item className="pt-4 px-3 pb-1 fs-lg">
-          <NavigationMenu.Trigger className="">
+    <NavigationMenu.Root className="NavigationMenuRoot relative flex hidden sm:block">
+      <NavigationMenu.List className="NavigationMenuList">
+        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
+          <NavigationMenu.Trigger className="NavigationMenuTrigger">
             Services <CaretDownIcon className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
-          <NavigationMenu.Content className="flex">
-            <ul className="flex">
+          <NavigationMenu.Content className="NavigationMenuContent">
+            <ul className="List one">
               <li style={{ gridRow: "span 3" }}>
                 <NavigationMenu.Link asChild>
                   <Link className="Callout" href="/">
@@ -56,90 +56,29 @@ const NavigationMenuDemo = () => {
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
-
-        <NavigationMenu.Item className="pt-4 pb-1 fs-lg px-3">
-          <NavigationMenu.Trigger className="NavigationMenuTrigger">
-            Pricing <CaretDownIcon className="CaretDown" aria-hidden />
-          </NavigationMenu.Trigger>
-          <NavigationMenu.Content className="NavigationMenuContent">
-            <ul className="List two">
-              <li
-                className="ListItem"
-                title="Introduction"
-                href="/docs/primitives/overview/introduction"
-              >
-                Build high-quality, accessible design systems and web apps.
-              </li>
-              <li
-                className="ListItem"
-                title="Getting started"
-                href="/docs/primitives/overview/getting-started"
-              >
-                A quick tutorial to get you up and running with Radix
-                Primitives.
-              </li>
-              <li
-                className="ListItem"
-                title="Styling"
-                href="/docs/primitives/overview/styling"
-              >
-                Unstyled and compatible with any styling solution.
-              </li>
-              <li
-                className="ListItem"
-                title="Animation"
-                href="/docs/primitives/overview/animation"
-              >
-                Use CSS keyframes or any animation library of your choice.
-              </li>
-              <li
-                className="ListItem"
-                title="Accessibility"
-                href="/docs/primitives/overview/accessibility"
-              >
-                Tested in a range of browsers and assistive technologies.
-              </li>
-              <li
-                className="ListItem"
-                title="Releases"
-                href="/docs/primitives/overview/releases"
-              >
-                Radix Primitives releases and their changelogs.
-              </li>
-            </ul>
-          </NavigationMenu.Content>
-        </NavigationMenu.Item>
-
-        <NavigationMenu.Item className="pt-4 pb-1 fs-lg px-3">
-          <NavigationMenu.Link
-            className="NavigationMenuLink"
-            href="https://github.com/radix-ui"
-          >
-            Resources
+        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
+          <NavigationMenu.Link className="NavigationMenuLink" href="Pricing">
+            Pricing
           </NavigationMenu.Link>
         </NavigationMenu.Item>
-        <NavigationMenu.Item className="pt-4 pb-1 fs-lg px-3">
-          <NavigationMenu.Link
-            className="NavigationMenuLink"
-            href="https://github.com/radix-ui"
-          >
+        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
+          <NavigationMenu.Link className="NavigationMenuLink" href="PricingTwo">
+            Pricing Two
+          </NavigationMenu.Link>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
+          <NavigationMenu.Link className="NavigationMenuLink" href="">
             Events
           </NavigationMenu.Link>
         </NavigationMenu.Item>
-        <NavigationMenu.Item className="pt-4 pb-1 fs-lg px-3">
-          <NavigationMenu.Link
-            className="NavigationMenuLink"
-            href="https://github.com/radix-ui"
-          >
+        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
+          <NavigationMenu.Link className="NavigationMenuLink" href="/About">
             About
           </NavigationMenu.Link>
         </NavigationMenu.Item>
-        <NavigationMenu.Item className="pt-4 pb-1 fs-lg px-3">
-          <NavigationMenu.Link
-            className="NavigationMenuLink"
-            href="https://github.com/radix-ui"
-          >
-            Contact
+        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
+          <NavigationMenu.Link className="NavigationMenuLink" href="/About">
+            About
           </NavigationMenu.Link>
         </NavigationMenu.Item>
 
@@ -155,6 +94,4 @@ const NavigationMenuDemo = () => {
   );
 };
 
-
-
-export default NavigationMenuDemo;
+export default SecondNavbar;
