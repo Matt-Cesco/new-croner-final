@@ -100,7 +100,7 @@ export default function MyApp({ Component, pageProps }) {
           }
         }();
         drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('h4f9nubwfutr'); // Your embed ID found within your account goes here`}
+        drift.load('xxxxxx'); // Your embed ID found within your account goes here`}
       </Script>
       <main className={poppins.className}>
         <Component {...pageProps} />
