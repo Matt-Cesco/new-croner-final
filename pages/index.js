@@ -30,7 +30,9 @@ export default function Home({homepage}) {
         <CaseStudy />
         <ContactForm />
         <Footer />
-        <DynamicDriftScript />
+        <Suspense fallback={`Loading...`}>
+          <DynamicDriftScript />
+        </Suspense>
       </div>
     </div>
   );
