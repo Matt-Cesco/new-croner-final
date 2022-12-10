@@ -76,9 +76,10 @@ export default function MyApp({ Component, pageProps }) {
          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
          `}
       </Script>
-      {/* <Script id="drift-script" strategy="lazyOnload">
+      <Script id="drift-script" strategy="lazyOnload">
         {`"use strict";
-
+         window.addEventListener('scroll', () => {
+            setTimeout(() => {
         !function() {
           var t = window.driftt = window.drift = window.driftt || [];
           if (!t.init) {
@@ -100,8 +101,13 @@ export default function MyApp({ Component, pageProps }) {
           }
         }();
         drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('h4f9nubwfutr'); // Your embed ID found within your account goes here`}
-      </Script> */}
+        drift.load('h4f9nubwfutr');
+            }, 1000);
+         }, {
+            once: true
+         });
+        `}
+      </Script>
       <main className={poppins.className}>
         <Component {...pageProps} />
       </main>
