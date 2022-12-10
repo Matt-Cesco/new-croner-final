@@ -1,9 +1,7 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { CheckIcon, ArrowRightIcon } from '@radix-ui/react-icons';
+import { CheckIcon } from '@radix-ui/react-icons';
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
-import KFClogo from '../public/images/kfc-logo.png'
 import Marquee from '../components/InfiniteScrolling';
 import Slider from '../components/Slider';
 

@@ -1,11 +1,17 @@
 
 import { gql, GraphQLClient } from 'graphql-request';
-import Head from 'next/head'
+import Head from 'next/head';
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
 import HomeSection from '../components/HomeSection';
 import Navbar from '../components/Navbar';
 import CaseStudy from '../components/CaseStudy';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+
+const DynamicDriftScript = dynamic(() => import("../components/DriftScript"), {
+  suspense: true,
+});
 
 export default function Home({homepage}) {
   return (
@@ -18,13 +24,16 @@ export default function Home({homepage}) {
 
       <div>
         <Navbar />
-        {homepage.homepageDetail.map(section => <HomeSection details={section} key={section.id} />)}
+        {homepage.homepageDetail.map((section) => (
+          <HomeSection details={section} key={section.id} />
+        ))}
         <CaseStudy />
         <ContactForm />
         <Footer />
+        <DynamicDriftScript />
       </div>
     </div>
-  )
+  );
 }
 
 const query = gql`
