@@ -1,15 +1,33 @@
-import { Poppins } from '@next/font/google';
+import { Roboto_Flex } from '@next/font/google';
 import '../styles/globals.css';
 import Script from 'next/script';
 
 // If loading a variable font, you don't need to specify the font weight
-const poppins = Poppins({ 
-  weight: ['400', '500', '600', '700'],
-  subsets: ['latin'] 
-})
+const roboto = Roboto_Flex({
+  
+  subsets: ["latin"],
+});
 
 
 export default function MyApp({ Component, pageProps }) {
+   const metaPixel = `
+         window.addEventListener('mousemove', () => {
+            setTimeout(() => {
+         !function(f,b,e,v,n,t,s)
+         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+         n.queue=[];t=b.createElement(e);t.async=!0;
+         t.src=v;s=b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t,s)}(window, document,'script',
+         'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '{your-pixel-id-goes-here}');
+         fbq('track', 'PageView');
+         }, 250);
+         }, {
+            once: true
+         });
+         `;
   return (
     <>
       <Script
@@ -70,6 +88,9 @@ export default function MyApp({ Component, pageProps }) {
          });
          `}
       </Script>
+      <Script id="metaPixel-script" strategy="lazyOnload">
+        {metaPixel}
+      </Script>
       <Script id="hotjar-script" strategy="lazyOnload">
         {`window.addEventListener('mousemove', () => {
             setTimeout(() => {
@@ -81,7 +102,7 @@ export default function MyApp({ Component, pageProps }) {
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-         }, 250);
+         }, 200);
          }, {
             once: true
          });
@@ -119,7 +140,7 @@ export default function MyApp({ Component, pageProps }) {
          });
         `}
       </Script>
-      <main className={poppins.className}>
+      <main className={roboto.className}>
         <Component {...pageProps} />
       </main>
     </>

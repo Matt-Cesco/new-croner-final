@@ -9,7 +9,7 @@ const SecondNavbar = () => {
     <NavigationMenu.Root className="NavigationMenuRoot relative flex hidden sm:block">
       <NavigationMenu.List className="NavigationMenuList">
         <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
-          <NavigationMenu.Trigger className="NavigationMenuTrigger">
+          <NavigationMenu.Trigger className="NavigationMenuTrigger font-bold">
             Services <CaretDownIcon className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
@@ -57,27 +57,23 @@ const SecondNavbar = () => {
           </NavigationMenu.Content>
         </NavigationMenu.Item>
         <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
-          <NavigationMenu.Link className="NavigationMenuLink" href="Pricing">
+          <NavigationMenu.Link
+            className="NavigationMenuLink font-bold"
+            href="PricingTwo"
+          >
             Pricing
           </NavigationMenu.Link>
         </NavigationMenu.Item>
         <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
-          <NavigationMenu.Link className="NavigationMenuLink" href="PricingTwo">
-            Pricing Two
-          </NavigationMenu.Link>
-        </NavigationMenu.Item>
-        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
-          <NavigationMenu.Link className="NavigationMenuLink" href="">
+          <NavigationMenu.Link className="NavigationMenuLink font-bold" href="">
             Events
           </NavigationMenu.Link>
         </NavigationMenu.Item>
         <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
-          <NavigationMenu.Link className="NavigationMenuLink" href="/About">
-            About
-          </NavigationMenu.Link>
-        </NavigationMenu.Item>
-        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
-          <NavigationMenu.Link className="NavigationMenuLink" href="/About">
+          <NavigationMenu.Link
+            className="NavigationMenuLink font-bold"
+            href="/About"
+          >
             About
           </NavigationMenu.Link>
         </NavigationMenu.Item>
