@@ -49,20 +49,25 @@ export default function MyApp({ Component, pageProps }) {
             })();`}
       </Script>
       <Script id="ruler-script" strategy="lazyOnload">
-        {`
-         var __raconfig = __raconfig || {};
-         __raconfig.uid = '< YOUR SITE ID >';
-         __raconfig.action = 'track';
+        {`window.addEventListener('mousemove', () => {
+            setTimeout(() => {
+            var __raconfig = __raconfig || {};
+            __raconfig.uid = '< YOUR SITE ID >';
+            __raconfig.action = 'track';
 
-         (function () {
+            (function () {
 
-         var ra = document.createElement('script');
-         ra.type = 'text/javascript';
-         ra.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.ruleranalytics.com/lib/1.0/ra-bootstrap.js.php';
-         var s = document.getElementsByTagName('script')[0];
-         s.parentNode.insertBefore(ra, s);
+            var ra = document.createElement('script');
+            ra.type = 'text/javascript';
+            ra.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.ruleranalytics.com/lib/1.0/ra-bootstrap.js.php';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ra, s);
 
-         }());
+            }());
+            }, 250);
+         }, {
+            once: true
+         });
          `}
       </Script>
       <Script id="hotjar-script" strategy="lazyOnload">
