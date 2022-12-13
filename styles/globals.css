@@ -20,6 +20,9 @@
   .text-red{
     color: #ea2229;
   }
+  .text-red-dark{
+    color: #E82B2B;
+  }
   .text-lightblue{
     color: #1fa5d8;
   }
@@ -27,7 +30,10 @@
     background-color: #243447;
   }
   .bg-red{
-    background-color: #ea2229;
+    background-color: #E82B2B;
+  }
+  .bg-red-dark{
+    background-color: #E82B2B;
   }
   .bg-lightblue{
     background-color: #1fa5d8;
@@ -59,6 +65,9 @@
   .btn-primary-tr{
     @apply bg-red text-white font-bold py-2 px-5 rounded-full rounded-tr-none;
   }
+  .btn-dark-red{
+    @apply bg-red-dark text-white py-4 px-8;
+  }
 }
 
 
@@ -82,7 +91,7 @@ p {
 
 .NavigationMenuTrigger,
 .NavigationMenuLink {
-  padding: 8px 12px;
+  padding: 8px 14px;
   outline: none;
   user-select: none;
   line-height: 1;
@@ -446,7 +455,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 40px;
+  height: 80px;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -469,7 +478,7 @@ p {
 
 .marquee ul li {
   float: left;
-  width: 100px;
+  width: 200px;
   overflow: hidden;
 }
 

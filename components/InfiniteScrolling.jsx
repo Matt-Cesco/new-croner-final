@@ -1,5 +1,5 @@
 import Image from "next/image";
-import KFClogo from '../public/images/kfc-logo.png';
+import PKlogo from '../public/images/pk-logo-2020.png';
 
 const Marquee = () => (
   <div className="marquee-container">
@@ -7,84 +7,34 @@ const Marquee = () => (
       <div className="marquee">
         <ul className="flex justify-around">
           <li>
-          <Image 
-            src={KFClogo}
-            alt="kfc logo"
-            width={104}
-            height={29}
-          />
+            <Image src={PKlogo} alt="kfc logo" width={225} height={75} />
           </li>
           <li>
-          <Image 
-            src={KFClogo}
-            alt="kfc logo"
-            width={104}
-            height={29}
-          />
+            <Image src={PKlogo} alt="kfc logo" width={225} height={75} />
           </li>
           <li>
-          <Image 
-            src={KFClogo}
-            alt="kfc logo"
-            width={104}
-            height={29}
-          />
+            <Image src={PKlogo} alt="kfc logo" width={225} height={75} />
           </li>
           <li>
-          <Image 
-            src={KFClogo}
-            alt="kfc logo"
-            width={104}
-            height={29}
-          />
+            <Image src={PKlogo} alt="kfc logo" width={225} height={75} />
           </li>
           <li>
-          <Image 
-            src={KFClogo}
-            alt="kfc logo"
-            width={104}
-            height={29}
-          />
+            <Image src={PKlogo} alt="kfc logo" width={225} height={75} />
           </li>
           <li>
-          <Image 
-            src={KFClogo}
-            alt="kfc logo"
-            width={104}
-            height={29}
-          />
+            <Image src={PKlogo} alt="kfc logo" width={225} height={75} />
           </li>
           <li>
-          <Image 
-            src={KFClogo}
-            alt="kfc logo"
-            width={104}
-            height={29}
-          />
+            <Image src={PKlogo} alt="kfc logo" width={225} height={75} />
           </li>
           <li>
-          <Image 
-            src={KFClogo}
-            alt="kfc logo"
-            width={104}
-            height={29}
-          />
+            <Image src={PKlogo} alt="kfc logo" width={225} height={75} />
           </li>
           <li>
-          <Image 
-            src={KFClogo}
-            alt="kfc logo"
-            width={104}
-            height={29}
-          />
+            <Image src={PKlogo} alt="kfc logo" width={225} height={75} />
           </li>
           <li>
-          <Image 
-            src={KFClogo}
-            alt="kfc logo"
-            width={104}
-            height={29}
-          />
+            <Image src={PKlogo} alt="kfc logo" width={225} height={75} />
           </li>
         </ul>
       </div>

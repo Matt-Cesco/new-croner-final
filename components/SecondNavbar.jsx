@@ -6,10 +6,10 @@ import Link from "next/link";
 
 const SecondNavbar = () => {
   return (
-    <NavigationMenu.Root className="NavigationMenuRoot relative flex hidden sm:block">
+    <NavigationMenu.Root className="NavigationMenuRoot relative hidden sm:block">
       <NavigationMenu.List className="NavigationMenuList">
-        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
-          <NavigationMenu.Trigger className="NavigationMenuTrigger font-bold">
+        <NavigationMenu.Item className="pt-3 pb-1">
+          <NavigationMenu.Trigger className="NavigationMenuTrigger text-sm font-bold">
             Services <CaretDownIcon className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
@@ -56,22 +56,41 @@ const SecondNavbar = () => {
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
-        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
+        <NavigationMenu.Item className="pt-3 pb-1">
           <NavigationMenu.Link
-            className="NavigationMenuLink font-bold"
-            href="PricingTwo"
+            className="NavigationMenuLink font-bold text-sm"
+            href="PricingSinglePage"
           >
-            Pricing
+            PricingSinglePage
           </NavigationMenu.Link>
         </NavigationMenu.Item>
-        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
-          <NavigationMenu.Link className="NavigationMenuLink font-bold" href="">
+        <NavigationMenu.Item className="pt-3 pb-1">
+          <NavigationMenu.Link
+            className="NavigationMenuLink font-bold text-sm"
+            href="PricingMultiPage"
+          >
+            PricingMultiPage
+          </NavigationMenu.Link>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item className="pt-3 pb-1">
+          <NavigationMenu.Link
+            className="NavigationMenuLink font-bold text-sm"
+            href="/Resources"
+          >
+            Resources
+          </NavigationMenu.Link>
+        </NavigationMenu.Item>
+        <NavigationMenu.Item className="pt-3 pb-1">
+          <NavigationMenu.Link
+            className="NavigationMenuLink font-bold text-sm"
+            href=""
+          >
             Events
           </NavigationMenu.Link>
         </NavigationMenu.Item>
-        <NavigationMenu.Item className="pt-4 pb-1 fs-lg">
+        <NavigationMenu.Item className="pt-3 pb-1">
           <NavigationMenu.Link
-            className="NavigationMenuLink font-bold"
+            className="NavigationMenuLink font-bold text-sm"
             href="/About"
           >
             About

@@ -6,10 +6,15 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'body': ["Roboto_Flex", "sans-serif"],
+      body: ["Montserrat", "sans-serif"],
     },
     fontWeight: {
       bold: "900",
+    },
+    extend: {
+      colors: {
+        "black-rgba": "rgba(140, 0, 173, 0.3)",
+      },
     },
   },
   plugins: [],

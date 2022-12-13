@@ -10,7 +10,7 @@ const DynamicComponentWithNoSSR = dynamic(() => import('../components/Modal'), {
 })
 
 
-const PricingTwo = () => {
+const PricingSinglePage = () => {
   return (
     <>
       <Navbar />
@@ -457,6 +457,9 @@ const PricingTwo = () => {
       <div className="max-w-screen-xl mx-auto">
         <div className="pt-16 my-8">
           <div className="flex justify-between items-end">
+            <h5 className="text-yellow-600 max-w-xl text-bold py-2">
+              FEEFO EXCELLENT
+            </h5>
             <div className="max-w-xl">
               <h3 className="font-bold text-4xl primary-color uppercase py-2">
                 Customers stories
@@ -466,7 +469,6 @@ const PricingTwo = () => {
                 & Safety services to business owners and senior leaders.
               </h5>
             </div>
-            <h5 className="text-yellow-600 max-w-xl py-2">FEEFO EXCELLENT</h5>
           </div>
         </div>
       </div>
@@ -493,4 +495,4 @@ const PricingTwo = () => {
   );
 }
 
-export default PricingTwo
+export default PricingSinglePage;

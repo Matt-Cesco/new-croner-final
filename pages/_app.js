@@ -1,10 +1,9 @@
-import { Roboto_Flex } from '@next/font/google';
+import { Montserrat } from '@next/font/google';
 import '../styles/globals.css';
 import Script from 'next/script';
 
 // If loading a variable font, you don't need to specify the font weight
-const roboto = Roboto_Flex({
-  
+const roboto = Montserrat({
   subsets: ["latin"],
 });
 
