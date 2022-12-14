@@ -7,6 +7,7 @@ import Slider from "../components/Slider";
 import Link from "next/link";
 import Image from "next/image";
 import banner from "../public/images/banner-container-hero.webp";
+import trustpilotStars from "../public/images/stars-5-trustpilot.svg";
 
 const DynamicComponentWithNoSSR = dynamic(() => import("../components/Modal"), {
   ssr: false,
@@ -31,21 +32,32 @@ const PricingSinglePage = () => {
           <h3 className="text-xs font-bold uppercase text-white">
             Choose your option below and explore our packages
           </h3>
-          <h5 className="text-green-600 text-sm font-bold max-w-xl py-6">
-            TRUSTPILOT EXCELLENT WIDGET
-          </h5>
+          <div className="flex items-center">
+            <h5 className="text-white text-base max-w-xl py-6">Excellent</h5>
+            <div className="">
+              <Image
+                src={trustpilotStars}
+                alt="trust pilot"
+                height={20}
+                className="mx-4"
+              />
+            </div>
+            <h5 className="text-white text-base max-w-xl py-6">
+              1,655 reviews
+            </h5>
+          </div>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto pt-24 px-4 md:px-0">
+      <div className="max-w-screen-xl mx-auto pt-28 px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex justify-center">
-            <div className="flex flex-col justify-between bg-white shadow-xl w-full p-6">
+            <div className="flex flex-col justify-between bg-gray-100 shadow-xl w-full p-6">
               <div className="">
                 <div className="">
                   <h2 className="font-bold mb-2 text-2xl text-center pt-2 pb-1">
                     Croner Employment
                   </h2>
-                  <h5 className="primary-color text-sm text-center">
+                  <h5 className="text-sm text-center">
                     HR and employment law support
                   </h5>
                   <div className="flex justify-center py-6">
@@ -60,12 +72,12 @@ const PricingSinglePage = () => {
                       <div className="text-sm text-gray-600">*Per employee</div>
                     </div>
                   </div>
-                  <div className="flex  border-b pb-3">
-                    <p className="text-xs text-gray-500">
+                  <div className="flex border-b pb-3">
+                    <p className="text-xs text-gray-600">
                       *based on a company size of 250 employees
                     </p>
                   </div>
-                  <ul className="py-3.5 primary-color">
+                  <ul className="py-3.5">
                     <li className="flex items-start text-sm py-1.5">
                       <div className="bg-green-500 rounded-xl text-white p-0.5">
                         <CheckIcon />
@@ -151,9 +163,13 @@ const PricingSinglePage = () => {
             </div>
           </div>
           <div className="flex justify-center">
+            <div className="bg-red"></div>
             <div className="flex flex-col justify-between bg-primary text-white shadow-xl w-full p-6">
               <div className="">
-                <h2 className="font-bold mb-2 text-2xl text-center pt-2 pb-1">
+                <div className="bg-red text-center text-sm font-bold uppercase py-2 m-[-1.5rem]">
+                  most popular
+                </div>
+                <h2 className="font-bold mb-2 text-2xl text-center pt-2 mt-8 pb-1">
                   Croner Complete
                 </h2>
                 <h5 className="text-sm text-center">
@@ -172,7 +188,7 @@ const PricingSinglePage = () => {
                   </div>
                 </div>
                 <div className="flex  border-b pb-3">
-                  <p className="text-xs text-gray-500">
+                  <p className="text-xs text-gray-400">
                     *based on a company size of 250 employees
                   </p>
                 </div>
@@ -241,13 +257,13 @@ const PricingSinglePage = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="flex flex-col justify-between bg-white shadow-xl w-full p-6">
+            <div className="flex flex-col justify-between bg-gray-100 shadow-xl w-full p-6">
               <div className="">
                 <div className="">
                   <h2 className="font-bold mb-2 text-2xl text-center pt-2 pb-1">
                     Croner Health & Safety
                   </h2>
-                  <h5 className="primary-color text-sm text-center">
+                  <h5 className="text-sm text-center">
                     Health & safety support
                   </h5>
                   <div className="flex justify-center py-6">
@@ -263,11 +279,11 @@ const PricingSinglePage = () => {
                     </div>
                   </div>
                   <div className="flex border-b pb-3">
-                    <p className="text-xs text-gray-500">
+                    <p className="text-xs text-gray-600">
                       *based on a company size of 250 employees
                     </p>
                   </div>
-                  <ul className="py-3.5 primary-color">
+                  <ul className="py-3.5">
                     <li className="flex items-start text-sm py-1.5">
                       <div className="bg-green-500 rounded-xl text-white p-0.5">
                         <CheckIcon />
@@ -382,20 +398,31 @@ const PricingSinglePage = () => {
       </div>
       <div className="w-full">
         <div className="max-w-screen-xl mx-auto">
-          <div className="pt-24">
+          <div className="pt-28">
             <h3 className="text-4xl font-bold pb-2">
               Trusted by 11,000+ businesses
             </h3>
-            <h5 className="text-green-600 text-sm font-bold max-w-xl pt-12 pb-4">
-              TRUSTPILOT EXCELLENT WIDGET
-            </h5>
-            <h5 className="max-w-xl text-base primary-color pb-2">
+            <div className="flex items-center">
+              <h5 className="text-black text-base max-w-xl py-6">Excellent</h5>
+              <div className="">
+                <Image
+                  src={trustpilotStars}
+                  alt="trust pilot"
+                  height={20}
+                  className="mx-4"
+                />
+              </div>
+              <h5 className="text-black text-base max-w-xl py-6">
+                1,655 reviews
+              </h5>
+            </div>
+            <h5 className="max-w-xl text-base pb-2">
               From gross misconduct and disciplinaries, to tribunal cases and
               redundancies — we’ve handled it all. Our HR, health & safety, and
               pay & reward support has helped businesses through the toughest
               periods of their growth.
             </h5>
-            <h5 className="max-w-xl text-base primary-color py-2">
+            <h5 className="max-w-xl text-base py-2">
               Get a{" "}
               <span className="text-sm font-bold text-red uppercase">
                 Free Consultation
@@ -404,11 +431,11 @@ const PricingSinglePage = () => {
             </h5>
           </div>
         </div>
-        <div className="pt-12">
+        <div className="pt-16">
           <Marquee />
         </div>
       </div>
-      <div className="w-full bg-red-dark mt-24">
+      <div className="w-full bg-red-dark mt-28">
         <div className="max-w-screen-xl mx-auto py-12">
           <div className="flex justify-between items-end">
             <div className="">
@@ -426,14 +453,16 @@ const PricingSinglePage = () => {
         </div>
       </div>
       <div className="max-w-screen-xl mx-auto">
-        <div className="pt-24 pb-16">
+        <div className="pt-28 pb-20">
           <div className="flex justify-between items-end">
-            <h5 className="text-yellow-600 text-sm font-bold max-w-xl py-2">
+            <h5 className="text-yellow-600 text-sm font-bold max-w-xl">
               FEEFO EXCELLENT WIDGET
             </h5>
             <div className="max-w-xl">
-              <h3 className="text-4xl font-bold ">Our costumers success stories</h3>
-              <h5 className="pt-12 pb-4">
+              <h3 className="text-4xl font-bold ">
+                Our customers success stories
+              </h3>
+              <h5 className="pt-12">
                 Explore how we help award-winning HR, Employment Law, and Health
                 & Safety services to business owners and senior leaders.
               </h5>
@@ -447,7 +476,7 @@ const PricingSinglePage = () => {
         </div>
       </div>
       <div className="max-w-screen-xl mx-auto pb-12">
-        <h5 className="text-primary max-w-xl pt-12 pb-4">
+        <h5 className="max-w-xl pt-12 pb-4">
           Contact us and{" "}
           <span className="text-sm font-bold text-red uppercase">
             we can help you

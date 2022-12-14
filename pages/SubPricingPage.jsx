@@ -6,8 +6,8 @@ import Marquee from "../components/InfiniteScrolling";
 import Slider from "../components/Slider";
 import Link from "next/link";
 import Image from "next/image";
-import banner from '../public/images/banner-container-hero.webp';
-import mobilePhone from '../public/images/mobile-phone.jpg';
+import banner from "../public/images/banner-container-hero.webp";
+import mobilePhone from "../public/images/mobile-phone.jpg";
 
 const ModalBlack = dynamic(() => import("../components/ModalBlack"), {
   ssr: false,
@@ -34,13 +34,13 @@ const PricingSinglePage = () => {
           </h3>
         </div>
       </div>
-      <div className="max-w-screen-lg mx-auto py-24">
+      <div className="max-w-screen-lg mx-auto py-28">
         <h2 className="text-4xl font-bold">
           Text for generating urgency Businesses have to fulfill a number of
           complex obligations and duties in relation to employment law and
           safety. The Croner Complete package will solve your problems
         </h2>
-        <h5 className="text-lg font-bold primary-color pt-12">
+        <h5 className="text-lg font-bold pt-12">
           Text for generating urgency Businesses have to fulfill a number of
           complex obligations and duties in relation to employment law and
           safety. Text for generating urgency Businesses have to fulfill a
@@ -54,13 +54,13 @@ const PricingSinglePage = () => {
       <div className="max-w-screen-lg mx-auto">
         <h3 className="text-4xl font-bold">What's Includes</h3>
       </div>
-      <div className="max-w-screen-xl mx-auto pt-16 pb-24">
+      <div className="max-w-screen-xl mx-auto pt-20 pb-28">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex flex-col">
             <h5 className="font-bold mb-2 text-xl uppercase pt-2 pb-1">
               Employment Law
             </h5>
-            <ul className="primary-color">
+            <ul className="">
               <li className="flex justify-between items-start text-base border-b py-3">
                 <span className="px-1.5">
                   Unlimited 24/7 expert Employment advice
@@ -117,7 +117,7 @@ const PricingSinglePage = () => {
             <h5 className="font-bold mb-2 text-xl uppercase pt-2 pb-1">
               HR Law
             </h5>
-            <ul className="primary-color">
+            <ul className="">
               <li className="flex justify-between items-start text-base border-b py-3">
                 <span className="px-1.5">Unlimited 24/7 expert HR advice</span>
                 <div className="my-auto text-green-500 border rounded-xl p-0.5">
@@ -180,7 +180,7 @@ const PricingSinglePage = () => {
             <h5 className="font-bold mb-2 text-xl uppercase pt-2 pb-1">
               Health & Safety Law
             </h5>
-            <ul className="primary-color">
+            <ul className="">
               <li className="flex justify-between items-start text-base border-b py-3">
                 <span className="px-1.5">
                   Unlimited 24/7 expert Health & Safety advice
@@ -241,7 +241,7 @@ const PricingSinglePage = () => {
         <div className="max-w-screen-lg text-center mx-auto">
           <h3 className="text-4xl font-bold">Everything under your control</h3>
         </div>
-        <div className="max-w-screen-xl mx-auto pt-16">
+        <div className="max-w-screen-xl mx-auto pt-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col">
               <Image src={mobilePhone} alt="mobile phone" width={628} />
@@ -250,14 +250,14 @@ const PricingSinglePage = () => {
               <h5 class="font-bold mb-2 text-xl uppercase pt-2 pb-1">
                 employee management software
               </h5>
-              <p className="text-base primary-color pb-4">
+              <p className="text-lg pb-3">
                 Need to know who is in work today, even if you are not actually
-                in yourself? Just reach for the laptop or fire up the free
-                BrightHR app and instantly see who is off sick, who is running
-                late, and whether your staff holiday planner's up to date.
+                in yourself? Just fire up the free BrightHR app and instantly
+                see who is off sick, who is running late, and whether your staff
+                holiday planner's up to date.
               </p>
-              <ul className="primary-color">
-                <li className="flex items-start text-sm py-1.5">
+              <ul className="text-base py-6">
+                <li className="flex items-start py-1.5">
                   <div className="border rounded-xl text-green-500 p-0.5">
                     <CheckIcon />
                   </div>
@@ -265,7 +265,7 @@ const PricingSinglePage = () => {
                     Online Clock in GPS based manager manager
                   </span>
                 </li>
-                <li className="flex items-start text-sm py-1.5">
+                <li className="flex items-start py-1.5">
                   <div className="border rounded-xl text-green-500 p-0.5">
                     <CheckIcon />
                   </div>
@@ -273,19 +273,19 @@ const PricingSinglePage = () => {
                     Rota shifts online manager manager manager
                   </span>
                 </li>
-                <li className="flex items-start text-sm py-1.5">
+                <li className="flex items-start py-1.5">
                   <div className="border rounded-xl text-green-500 p-0.5">
                     <CheckIcon />
                   </div>
                   <span className="px-1.5">Online Clock in GPS based</span>
                 </li>
-                <li className="flex items-start text-sm py-1.5">
+                <li className="flex items-start py-1.5">
                   <div className="border rounded-xl text-green-500 p-0.5">
                     <CheckIcon />
                   </div>
                   <span className="px-1.5">Rota shifts online manager</span>
                 </li>
-                <li className="flex items-start text-sm py-1.5">
+                <li className="flex items-start py-1.5">
                   <div className="border rounded-xl text-green-500 p-0.5">
                     <CheckIcon />
                   </div>
@@ -293,7 +293,7 @@ const PricingSinglePage = () => {
                     Online Clock in GPS based manager
                   </span>
                 </li>
-                <li className="flex items-start text-sm py-1.5">
+                <li className="flex items-start py-1.5">
                   <div className="border rounded-xl text-green-500 p-0.5">
                     <CheckIcon />
                   </div>
@@ -307,13 +307,13 @@ const PricingSinglePage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full pt-24">
+      <div className="w-full pt-28">
         <div className="max-w-screen-lg mx-auto">
           <h3 className="text-4xl font-bold">
             We'll tailor the perfect service for your business
           </h3>
           <div className="pt-12 pb-4">
-            <p className="text-base primary-color">
+            <p className="text-base">
               *The service pricing is based on our entry level product over a 5
               year term. Dependent on the industry or your business
               circumstances and the service term you require, the fee may vary
@@ -321,36 +321,36 @@ const PricingSinglePage = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-screen-xl mx-auto pt-16">
+        <div className="max-w-screen-xl mx-auto pt-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col w-3/4">
               <h5 class="font-bold mb-2 text-xl uppercase pt-2 pb-1">
                 Get an Instant quote
               </h5>
-              <p className="py-3 text-base primary-color">
+              <p className="py-3 text-base">
                 Enter your number of employees and we'll tailor the perfect
                 service for your business.
               </p>
-              <p className="py-3 text-base primary-color">
+              <p className="py-3 text-base">
                 Feel free to call us on{" "}
                 <span className="text-red font-bold">01455 858 132</span> to
                 find out more or get any questions you might have answered by
                 our team.
               </p>
-              <p className="py-3 text-base primary-color">
+              <p className="py-3 text-base">
                 We are happy to help you to succeed
               </p>
             </div>
             <div className="flex flex-col">
               <div className="w-3/4">
                 <div className="">
-                  <div className="text-6xl font-bold primary-color">
+                  <div className="text-6xl font-bold">
                     £9.71
                     <span className="text-sm font-normal text-gray-400">
                       /mo
                     </span>
                   </div>
-                  <div className="text-sm text-gray-400">*Per employee</div>
+                  <div className="text-sm text-gray-500">*Per employee</div>
                 </div>
                 <div className="py-3">
                   <p className="text-base font-bold primary-color">
@@ -366,7 +366,7 @@ const PricingSinglePage = () => {
                   />
                   <label
                     htmlFor="floating_standard"
-                    className="absolute text-base text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    className="absolute text-base text-white dark:text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     Enter here your employees number
                   </label>
@@ -381,7 +381,7 @@ const PricingSinglePage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-red-dark mt-24">
+      <div className="w-full bg-red-dark mt-28">
         <div className="max-w-screen-xl mx-auto py-12">
           <div className="flex justify-between items-end">
             <div className="py-3">
@@ -398,7 +398,7 @@ const PricingSinglePage = () => {
           </div>
         </div>
       </div>
-      <div class="max-w-screen-lg mx-auto pt-24 pb-16">
+      <div class="max-w-screen-lg mx-auto pt-28 pb-20">
         <h3 class="text-4xl font-bold ">Our costumers success stories</h3>
         <h5 className="pt-12 pb-4 max-w-xl">
           Explore how we help award-winning HR, Employment Law, and Health &
@@ -411,7 +411,7 @@ const PricingSinglePage = () => {
         </div>
       </div>
       <div className="max-w-screen-xl mx-auto pb-12">
-        <h5 className="text-primary max-w-xl pt-12 pb-4">
+        <h5 className="max-w-xl pt-12 pb-4">
           Contact us and{" "}
           <span className="text-sm font-bold text-red uppercase">
             we can help you

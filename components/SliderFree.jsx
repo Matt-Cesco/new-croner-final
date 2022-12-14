@@ -1,5 +1,6 @@
 import Image from "next/image";
 import freeResImage from "../public/images/free-res.jpg";
+import slideImage from '../public/images/slider-image.jpg';
 
 // import Swiper core and required modules
 import { Navigation, Scrollbar, A11y, Controller } from "swiper";
@@ -24,30 +25,48 @@ const Slider = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
-        <SwiperSlide>
-          <Image src={freeResImage} width={400} height={400} alt="text image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={freeResImage} width={400} height={400} alt="text image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={freeResImage} width={400} height={400} alt="text image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={freeResImage} width={400} height={400} alt="text image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={freeResImage} width={400} height={400} alt="text image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={freeResImage} width={400} height={400} alt="text image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={freeResImage} width={400} height={400} alt="text image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={freeResImage} width={400} height={400} alt="text image" />
-        </SwiperSlide>
+      <SwiperSlide>
+        <Image 
+        src={slideImage}
+        width={630}
+        alt="text image"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image 
+        src={slideImage}
+        width={630}
+        alt="text image"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image 
+        src={slideImage}
+        width={630}
+        alt="text image"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image 
+        src={slideImage}
+        width={630}
+        alt="text image"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image 
+        src={slideImage}
+        width={630}
+        alt="text image"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image 
+        src={slideImage}
+        width={630}
+        alt="text image"
+        />
+      </SwiperSlide>
       </Swiper>
     </>
   );
