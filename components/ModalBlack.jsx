@@ -6,7 +6,7 @@ import MarketoForm from "./MarketoForm";
 const DialogDemo = () => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
-      <button className="bg-black uppercase text-white font-bold py-6 px-20 cursor-pointer">
+      <button className="bg-black uppercase text-white px-14 py-4 font-semibold cursor-pointer">
         Book Free Call
       </button>
     </Dialog.Trigger>

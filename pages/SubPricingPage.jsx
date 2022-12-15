@@ -344,8 +344,8 @@ const PricingSinglePage = () => {
             <div className="flex flex-col">
               <div className="w-3/4">
                 <div className="">
-                  <div className="text-6xl font-bold">
-                    £9.71
+                  <div className="text-6xl font-bold primary-color">
+                    £-.--
                     <span className="text-sm font-normal text-gray-400">
                       /mo
                     </span>
@@ -354,7 +354,7 @@ const PricingSinglePage = () => {
                 </div>
                 <div className="py-3">
                   <p className="text-base font-bold primary-color">
-                    How many Employees do you have?
+                    Please enter your Employees number
                   </p>
                 </div>
                 <div className="relative">

@@ -6,12 +6,11 @@ import Marquee from "../components/InfiniteScrolling";
 import SliderFree from "../components/SliderFree";
 import Link from "next/link";
 import Image from "next/image";
-import banner from "../public/images/banner-container-hero.webp";
-import mobilePhone from "../public/images/mobile-phone.jpg";
-import maternityImage from "../public/images/maternity-pay.png";
-import AccordionResources from "../components/AccordionResources";
+import banner from '../public/images/banner-container-hero.webp';
+import mobilePhone from '../public/images/mobile-phone.jpg';
+import maternityImage from '../public/images/maternity-pay.png';
+import AccordionResources from '../components/AccordionResources';
 import Slider from "../components/Slider";
-import homepageImage from "../public/images/homepage-image-1000.webp";
 
 const ModalBlack = dynamic(() => import("../components/ModalBlack"), {
   ssr: false,
@@ -59,9 +58,7 @@ const Resources = () => {
         <div className="flex justify-between items-end">
           <div className="max-w-xl">
             <h3 className="text-4xl font-bold ">Featured FREE downloads</h3>
-            <h3 class="text-xs font-bold uppercase">
-              free resources to download for your business
-            </h3>
+            <h3 class="text-xs font-bold uppercase">free resources to download for your business</h3>
           </div>
           <h5 className="text-red text-sm font-bold max-w-xl">
             See All Free downloads &rarr;
@@ -73,38 +70,12 @@ const Resources = () => {
           <SliderFree />
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto flex pt-28">
-        <div className="flex flex-col md:w-3/6">
-          <Image
-            src={homepageImage}
-            alt="image text"
-            width={640}
-            height={640}
-          />
-        </div>
-        <div className="flex flex-col justify-center md:w-2/6">
-          <div className="max-w-xl">
-            <h3 className="text-4xl font-bold ">FREE online calculators</h3>
-            <h5 className="font-bold pt-12">
-              Managing pay. Managing holiday. It can be taxing and
-              time-consuming—especially if numbers aren not your forte.
-            </h5>
-            <ul className="max-w-xl text-base pt-6">
-              <li className="py-1">Maternity Calculator</li>
-              <li className="py-1">Maternity Calculator</li>
-              <li className="py-1">Maternity Calculator</li>
-              <li className="py-1">Maternity Calculator</li>
-              <li className="py-1">Maternity Calculator</li>
-            </ul>
-            <h5 className="text-red text-sm font-bold pt-6">
-              See All Calculators &rarr;
-            </h5>
-          </div>
-        </div>
-      </div>
       <div className="max-w-screen-lg mx-auto">
         <div className="pt-28 pb-20">
           <div className="flex justify-between items-end">
+            <h5 className="text-red text-sm font-bold max-w-xl">
+              See All blog posts &rarr;
+            </h5>
             <div className="max-w-xl">
               <h3 className="text-4xl font-bold ">Latest Blog posts</h3>
               <h5 className="pt-12">
@@ -112,9 +83,6 @@ const Resources = () => {
                 & Safety services to business owners and senior leaders.
               </h5>
             </div>
-            <h5 className="text-red text-sm font-bold max-w-xl">
-              See All blog posts &rarr;
-            </h5>
           </div>
         </div>
       </div>

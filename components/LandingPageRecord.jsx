@@ -1,41 +1,60 @@
 import Image from "next/image";
-
+import trustpilotStars from "../public/images/stars-5-trustpilot.svg";
 
 const LandingPageRecord = ({ details }) => {
   return (
     <div className="bg-primary w-full">
-      <div className="max-w-screen-xl flex flex-col-reverse md:flex-row items-center px-6 py-24 md:py-32 mx-auto">
-        <div className="flex flex-col mb-32 md:w-2/6">
-          <h2 className="max-w-xl text-2xl md:text-4xl text-white md:textleft pt-6">
+      <div className="max-w-screen-2xl flex mx-auto">
+        <div className="flex flex-col md:w-7/12">
+          <Image
+            src={details.image.url}
+            alt={details.bigTitleH1}
+            width={1000}
+            height={1000}
+          />
+        </div>
+        <div className="flex flex-col justify-center  md:w-5/12 max-w-xl">
+          <h5 className="text-base font-semibold pb-3 text-yellow">
+            All Under One Umbrella
+          </h5>
+          <h1 className="max-w-xl text-4xl text-yellow font-bold md:text-5xl md:textleft hidden pt-24">
+            {details.bigTitleH1}
+          </h1>
+          <h2 className="text-6xl font-bold text-white">
             {details.subtitleH2}
           </h2>
-          <p className="max-w-sm text-white pt-6 md:pt-12">
-            Award-Winning HR, Employment Law and Health & Safety Services
-          </p>
-          <div className="flex flex-col md:flex-row pt-12">
+          <div className="flex items-center">
+            <h5 className="text-white text-base max-w-xl">Excellent</h5>
             <div className="">
-              <button className="bg-red text-white font-bold py-4 px-10 cursor-pointer">
-                {details.firstButton}
+              <Image
+                src={trustpilotStars}
+                alt="trust pilot"
+                height={20}
+                className="mx-4"
+              />
+            </div>
+            <h5 className="text-white text-base max-w-xl py-6">
+              1,655 reviews
+            </h5>
+          </div>
+          <div className="flex flex-col md:flex-row justify-between pt-12">
+            <div className="">
+              <button className="relative bg-red text-white px-14 py-4 font-semibold group">
+                <span className="absolute w-0 h-full bg-red-800 group-hover:w-full transition-all ease-out duration-200 left-0 top-0 cursor-pointer"></span>
+                <span className="relative">{details.firstButton}</span>
               </button>
             </div>
-            <div className="px-0 md:px-6 pt-6 md:pt-0">
-              <button className="bg-red text-white font-bold py-4 px-10 cursor-pointer">
-                {details.secondButton}
+            <div className="">
+              <button className="relative bg-red text-white px-14 py-4 font-semibold group">
+                <span className="absolute w-0 h-full bg-red-800 group-hover:w-full transition-all ease-out duration-200 left-0 top-0 cursor-pointer"></span>
+                <span className="relative">{details.secondButton}</span>
               </button>
             </div>
           </div>
         </div>
-        <div className="hidden md:block md:w-4/6">
-          <Image
-            src={details.image.url}
-            alt={details.bigTitleH1}
-            width={550}
-            height={500}
-          />
-        </div>
       </div>
     </div>
   );
-}
+};
 
 export default LandingPageRecord;

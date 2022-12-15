@@ -1,14 +1,13 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { CheckIcon } from '@radix-ui/react-icons';
-import dynamic from 'next/dynamic';
-import Marquee from '../components/InfiniteScrolling';
-import Slider from '../components/Slider';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { CheckIcon } from "@radix-ui/react-icons";
+import dynamic from "next/dynamic";
+import Marquee from "../components/InfiniteScrolling";
+import Slider from "../components/Slider";
 
-const DynamicComponentWithNoSSR = dynamic(() => import('../components/Modal'), {
+const DynamicComponentWithNoSSR = dynamic(() => import("../components/Modal"), {
   ssr: false,
-})
-
+});
 
 const PricingSinglePage = () => {
   return (
@@ -425,7 +424,7 @@ const PricingSinglePage = () => {
       </div>
       <div className="w-full bg-neutral-300">
         <div className="max-w-screen-xl mx-auto">
-          <div className="py-16 my-8 rounded-2xl">
+          <div className="py-20 my-8 rounded-2xl">
             <h3 className="font-bold mb-2 text-4xl primary-color uppercase py-2">
               Trusted by 11,000+ businesses
             </h3>
@@ -493,6 +492,6 @@ const PricingSinglePage = () => {
       <Footer />
     </>
   );
-}
+};
 
 export default PricingSinglePage;

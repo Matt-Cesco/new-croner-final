@@ -9,7 +9,7 @@ const SecondNavbar = () => {
     <NavigationMenu.Root className="NavigationMenuRoot relative hidden sm:block">
       <NavigationMenu.List className="NavigationMenuList">
         <NavigationMenu.Item className="pt-3 pb-1">
-          <NavigationMenu.Trigger className="NavigationMenuTrigger text-sm font-bold">
+          <NavigationMenu.Trigger className="NavigationMenuTrigger text-sm font-semibold">
             Services <CaretDownIcon className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
@@ -58,7 +58,7 @@ const SecondNavbar = () => {
         </NavigationMenu.Item>
         <NavigationMenu.Item className="pt-3 pb-1">
           <NavigationMenu.Link
-            className="NavigationMenuLink font-bold text-sm"
+            className="NavigationMenuLink font-semibold text-sm"
             href="PricingSinglePage"
           >
             PricingSinglePage
@@ -66,7 +66,7 @@ const SecondNavbar = () => {
         </NavigationMenu.Item>
         <NavigationMenu.Item className="pt-3 pb-1">
           <NavigationMenu.Link
-            className="NavigationMenuLink font-bold text-sm"
+            className="NavigationMenuLink font-semibold text-sm"
             href="PricingMultiPage"
           >
             PricingMultiPage
@@ -74,7 +74,7 @@ const SecondNavbar = () => {
         </NavigationMenu.Item>
         <NavigationMenu.Item className="pt-3 pb-1">
           <NavigationMenu.Link
-            className="NavigationMenuLink font-bold text-sm"
+            className="NavigationMenuLink font-semibold text-sm"
             href="/Resources"
           >
             Resources
@@ -82,7 +82,7 @@ const SecondNavbar = () => {
         </NavigationMenu.Item>
         <NavigationMenu.Item className="pt-3 pb-1">
           <NavigationMenu.Link
-            className="NavigationMenuLink font-bold text-sm"
+            className="NavigationMenuLink font-semibold text-sm"
             href=""
           >
             Events
@@ -90,7 +90,7 @@ const SecondNavbar = () => {
         </NavigationMenu.Item>
         <NavigationMenu.Item className="pt-3 pb-1">
           <NavigationMenu.Link
-            className="NavigationMenuLink font-bold text-sm"
+            className="NavigationMenuLink font-semibold text-sm"
             href="/About"
           >
             About

@@ -9,6 +9,7 @@ module.exports = {
       body: ["Montserrat", "sans-serif"],
     },
     fontWeight: {
+      semibold: "600",
       bold: "900",
     },
     extend: {

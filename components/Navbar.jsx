@@ -1,21 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from 'react';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import logo from '../public/images/Logo.png';
-import SecondNavbar from '../components/SecondNavbar';
+import React, { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import logo from "../public/images/Logo.png";
+import SecondNavbar from "../components/SecondNavbar";
 
 const Navbar = () => {
-
   const [nav, setNav] = useState(false);
   const handleNav = () => {
-    setNav(!nav)
-  } 
+    setNav(!nav);
+  };
 
   return (
     <div className="bg-white w-full">
       <div className="px-24">
-        <div className="w-full m-auto flex justify-between items-center p-3 primary-color">
+        <div className="w-full m-auto flex justify-between items-center py-2 primary-color">
           <div className="flex">
             <div className="logo-container flex items-center pr-6">
               <Link href="/">
@@ -28,7 +27,7 @@ const Navbar = () => {
             <div className="justify-end fs-xsm hidden md:block">
               call our free helpline today on:
             </div>
-            <div className="btn-primary-tr fs-xl hidden md:block">
+            <div className="text-red font-bold fs-xl hidden md:block">
               0800 141 3912
             </div>
           </div>
@@ -69,6 +68,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

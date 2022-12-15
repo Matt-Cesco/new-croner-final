@@ -1,12 +1,12 @@
-import React from 'react';
-import * as Dialog from '@radix-ui/react-dialog';
-import { Cross2Icon } from '@radix-ui/react-icons';
-import MarketoForm from './MarketoForm';
+import React from "react";
+import * as Dialog from "@radix-ui/react-dialog";
+import { Cross2Icon } from "@radix-ui/react-icons";
+import MarketoForm from "./MarketoForm";
 
 const DialogDemo = () => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
-      <button className="bg-red uppercase text-white font-bold py-6 px-20 cursor-pointer">
+      <button className="bg-red uppercase text-white px-14 py-4 font-semibold cursor-pointer">
         Get started
       </button>
     </Dialog.Trigger>
