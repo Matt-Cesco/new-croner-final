@@ -32,7 +32,7 @@ const Event = ({ details }) => {
           </div>
         </div>
         <div className="flex flex-col md:w-7/12">
-          <Image src={homepageImage} alt="details" width={1000} height={1000} />
+          <Image src={homepageImage} alt="details" width={747} height={747} />
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ const PricingSinglePage = () => {
       <Navbar />
       <div className="banner-container">
         <div className="relative">
-          <Image src={banner} width={1920} height={444} alt="banner image" />
+          <Image src={banner} height={444} alt="banner image" />
         </div>
         <div className="absolute top-1/4 left-1/4 z-10 max-w-screen-xl mx-auto pt-24 px-4 md:px-0">
           <h2 className="text-6xl text-white font-bold pb-2">
