@@ -44,7 +44,7 @@ const Slider = () => {
           <Image src={slideImage} width={630} alt="text image" />
         </SwiperSlide>
       </Swiper>
-      <div className="max-w-screen-xl mx-auto py-12">
+      <div className="max-w-screen-xl mx-auto pt-14">
         <div className="flex items-center">
           <div className="swiper-custom-scrollbar"></div>
           <div className="swiper-button-prev text-black ml-6"></div>

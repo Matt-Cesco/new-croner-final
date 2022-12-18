@@ -4,10 +4,10 @@ import homepageImage from "../public/images/homepage-image-1000.webp";
 const Event = ({ details }) => {
   return (
     <div className="max-w-full bg-primary">
-      <div className="max-w-screen-xl flex mx-auto py-24 px-4 md:px-0">
-        <div className="flex flex-col justify-center md:w-5/12">
+      <div className="max-w-screen-xl flex mx-auto py-28">
+        <div className="flex flex-col justify-center md:w-6/12">
           <div className="flex">
-            <p className="text-white text-lg font-bold">{details.sutitleTop}</p>
+            <p className=" text-lg font-bold">{details.sutitleTop}</p>
           </div>
           <div className="flex">
             <p className="text-white text-4xl font-bold">{details.title}</p>
@@ -26,12 +26,12 @@ const Event = ({ details }) => {
             </div>
           </div>
           <div className="flex">
-            <h5 className="text-yellow text-sm font-bold pt-12">
+            <h5 className="text-yellow text-base font-semibold pt-12">
               Or see all upcoming events &rarr;
             </h5>
           </div>
         </div>
-        <div className="flex flex-col md:w-7/12">
+        <div className="flex flex-col md:w-6/12">
           <Image src={homepageImage} alt="details" width={747} height={747} />
         </div>
       </div>

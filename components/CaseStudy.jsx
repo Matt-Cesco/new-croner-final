@@ -1,59 +1,34 @@
 
 import Image from "next/image";
-import Link from "next/link";
-import logoGrid from "../public/images/logo-grid.png"
+import homepageImage from "../public/images/homepage-image-1000.webp";
+import InfiniteScrollingHomepage from "../components/InfiniteScrollingHomepage";
 
 const CaseStudy = () => {
   return (
-    <div className="max-w-full mx-auto py-24 px-0 md:px-0 bg-lightblue">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="flex flex-col md:flex-row">
-          <div className="basis-1/2">
-            <div className="grid grid-cols-3 h-36 md:h-56 gap-4 content-between">
-              <div>
-                <Link href="/" className="flex items-center">
-                  <Image src={logoGrid} alt="logo" width={100} />
-                </Link>
-              </div>
-              <div>
-                <Link href="/" className="flex items-center">
-                  <Image src={logoGrid} alt="logo" width={100} />
-                </Link>
-              </div>
-              <div>
-                <Link href="/" className="flex items-center">
-                  <Image src={logoGrid} alt="logo" width={100} />
-                </Link>
-              </div>
-              <div>
-                <Link href="/" className="flex items-center">
-                  <Image src={logoGrid} alt="logo" width={100} />
-                </Link>
-              </div>
-              <div>
-                <Link href="/" className="flex items-center">
-                  <Image src={logoGrid} alt="logo" width={100} />
-                </Link>
-              </div>
-              <div>
-                <Link href="/" className="flex items-center">
-                  <Image src={logoGrid} alt="logo" width={100} />
-                </Link>
-              </div>
-            </div>
+    <div className="max-w-full bg-primary">
+      <div className="max-w-screen-xl flex mx-auto py-28 px-4 md:px-0">
+        <div className="flex flex-col md:w-6/12">
+          <Image src={homepageImage} alt="details" width={747} height={747} />
+        </div>
+        <div className="flex flex-col justify-center md:w-6/12">
+          <div className="flex">
+            <p className="text-white text-4xl font-bold">
+              11,000+ businesses have been where you are today.
+            </p>
           </div>
-          <div className="basis-1/2 px-4 md:px-0 pt-10 md:pt-0">
-            <div className="flex">
-              <p className="text-white text-2xl font-bold">Resources</p>
-            </div>
-            <div className="flex pt-3">
-              <p className="text-white text-4xl font-bold pb-2 mb-4">
-                11,000+ businesses have been where you are today.
-              </p>
-            </div>
-            <div className="py-3">
-              <button className="btn-primary-tl">Find out more</button>
-            </div>
+          <div className="pt-12">
+            <p className="text-white text-base">
+              We have got dozens of stories to share, with a variety of companies
+              across a range of sectors.
+            </p>
+          </div>
+          <div className="pt-6">
+            <InfiniteScrollingHomepage />
+          </div>
+          <div className="flex">
+            <h5 className="text-yellow text-base font-semibold pt-12">
+              Read their stories &rarr;
+            </h5>
           </div>
         </div>
       </div>

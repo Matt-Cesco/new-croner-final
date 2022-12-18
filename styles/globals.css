@@ -6,7 +6,7 @@
 
 @layer base {
   .primary-color{
-    color: #243447;
+    color: #041629;
   }
   .text-primary-color{
     color: #748497;
@@ -34,6 +34,9 @@
   }
   .bg-red-dark{
     background-color: #E82B2B;
+  }
+  .bg-alternative-red{
+    background-color: #cd4813;
   }
   .bg-lightblue{
     background-color: #1fa5d8;
@@ -492,14 +495,51 @@ p {
   }
 }
 
-/* Accordion resources */
+/* Infinite scrolling Homepage */
 
-.AccordionChevron {
-  transition: transform 300ms;
+.homepage-marquee-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.AccordionTrigger[data-state='open'] > .AccordionChevron {
-  transform: rotate(180deg);
+
+.homepage-marquee {
+  position: absolute;
+  display: block;
+  width: 200%;
+  padding: 0;
+  margin: 0;
+  animation: homepage-marquee-scrolling 22s linear infinite;
 }
+
+.homepage-marquee ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.homepage-marquee ul li {
+  float: left;
+  overflow: hidden;
+  margin: 0 16px;
+}
+
+@keyframes homepage-marquee-scrolling {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+/* Accordion resources */
 
 .swiper-custom-scrollbar{
   height: 1px;
@@ -537,7 +577,7 @@ p {
   margin-right: -20px;
 }
 
-/* Slider free */
+/* Slider */
 
 .swiper-free-custom-scrollbar{
   height: 1px;
@@ -546,6 +586,19 @@ p {
 }
 
 .swiper-free-custom-scrollbar .swiper-scrollbar-drag{
+  background: #000;
+  height: 3px;
+  top: -1px;
+  border-radius: 0;
+}
+
+.swiper-service-custom-scrollbar{
+  height: 1px;
+  background: rgba(0,0,0,.4);
+  width: 80%;
+}
+
+.swiper-service-custom-scrollbar .swiper-scrollbar-drag{
   background: #000;
   height: 3px;
   top: -1px;

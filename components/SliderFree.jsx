@@ -50,7 +50,7 @@ const SliderFree = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="max-w-screen-xl mx-auto py-12">
+      <div className="max-w-screen-xl mx-auto pt-14">
         <div className="flex items-center">
           <div className="swiper-free-custom-scrollbar"></div>
           <div className="swiper-free-button-prev text-black ml-6"></div>

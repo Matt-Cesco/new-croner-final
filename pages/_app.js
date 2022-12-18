@@ -3,143 +3,42 @@ import '../styles/globals.css';
 import Script from 'next/script';
 
 // If loading a variable font, you don't need to specify the font weight
-const roboto = Montserrat({
+const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
 
 export default function MyApp({ Component, pageProps }) {
    const metaPixel = `
-         window.addEventListener('mousemove', () => {
-            setTimeout(() => {
-         !function(f,b,e,v,n,t,s)
-         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-         n.queue=[];t=b.createElement(e);t.async=!0;
-         t.src=v;s=b.getElementsByTagName(e)[0];
-         s.parentNode.insertBefore(t,s)}(window, document,'script',
-         'https://connect.facebook.net/en_US/fbevents.js');
-         fbq('init', '{your-pixel-id-goes-here}');
-         fbq('track', 'PageView');
-         }, 250);
-         }, {
-            once: true
-         });
+         window.addEventListener('mousemove',()=>{setTimeout(()=>{!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','{your-pixel-id-goes-here}');fbq('track','PageView');},250);},{once:true});
          `;
   return (
     <>
-      <Script
-        id="google-tag-manager"
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-45E6DTPQCV`}
+      <Script id="google-tag-manager" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-45E6DTPQCV`}
       />
 
       <Script id="google-analytics" strategy="lazyOnload">
-        {` window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-
-         gtag('config', 'G-45E6DTPQCV');
-      `}
+        {`function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-45E6DTPQCV");`}
       </Script>
       <Script id="marketo-munchkin" strategy="lazyOnload">
-        {`(function() {
-            var didInit = false;
-            function initMunchkin() {
-               if(didInit === false) {
-                  didInit = true;
-                  Munchkin.init('CHANGE-ME');
-               }
-            }
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = '//munchkin.marketo.net/munchkin.js';
-            s.onreadystatechange = function() {
-               if (this.readyState == 'complete' || this.readyState == 'loaded') {
-                  initMunchkin();
-               }
-            };
-            s.onload = initMunchkin;
-            document.getElementsByTagName('head')[0].appendChild(s);
-            })();`}
+        {`!function(){var e=!1;function t(){!1===e&&(e=!0,Munchkin.init("CHANGE-ME"))}var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="//munchkin.marketo.net/munchkin.js",a.onreadystatechange=function(){("complete"==this.readyState||"loaded"==this.readyState)&&t()},a.onload=t,document.getElementsByTagName("head")[0].appendChild(a)}();`}
       </Script>
       <Script id="ruler-script" strategy="lazyOnload">
-        {`window.addEventListener('mousemove', () => {
-            setTimeout(() => {
-            var __raconfig = __raconfig || {};
-            __raconfig.uid = '< YOUR SITE ID >';
-            __raconfig.action = 'track';
-
-            (function () {
-
-            var ra = document.createElement('script');
-            ra.type = 'text/javascript';
-            ra.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.ruleranalytics.com/lib/1.0/ra-bootstrap.js.php';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ra, s);
-
-            }());
-            }, 250);
-         }, {
-            once: true
-         });
+        {`window.addEventListener("mousemove",()=>{setTimeout(()=>{var t=t||{};t.uid="< YOUR SITE ID >",t.action="track",function(){var t=document.createElement("script");t.type="text/javascript",t.src=("https:"==document.location.protocol?"https://":"http://")+"www.ruleranalytics.com/lib/1.0/ra-bootstrap.js.php";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}()},250)},{once:!0});
          `}
       </Script>
       <Script id="metaPixel-script" strategy="lazyOnload">
         {metaPixel}
       </Script>
       <Script id="hotjar-script" strategy="lazyOnload">
-        {`window.addEventListener('mousemove', () => {
-            setTimeout(() => {
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:3275002,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-         }, 200);
-         }, {
-            once: true
-         });
+        {`window.addEventListener("mousemove",()=>{setTimeout(()=>{!function(t,e,h,s,j,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:3275002,hjsv:6},j=e.getElementsByTagName("head")[0],(n=e.createElement("script")).async=1,n.src=h+t._hjSettings.hjid+s+t._hjSettings.hjsv,j.appendChild(n)}(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv=")},200)},{once:!0});
          `}
       </Script>
       <Script id="drift-script" strategy="lazyOnload">
-        {`"use strict";
-         window.addEventListener('scroll', () => {
-            setTimeout(() => {
-        !function() {
-          var t = window.driftt = window.drift = window.driftt || [];
-          if (!t.init) {
-            if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-            t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-            t.factory = function(e) {
-              return function() {
-                var n = Array.prototype.slice.call(arguments);
-                return n.unshift(e), t.push(n), t;
-              };
-            }, t.methods.forEach(function(e) {
-              t[e] = t.factory(e);
-            }), t.load = function(t) {
-              var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-              o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-              var i = document.getElementsByTagName("script")[0];
-              i.parentNode.insertBefore(o, i);
-            };
-          }
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('h4f9nubwfutr');
-            }, 1000);
-         }, {
-            once: true
-         });
+        {`"use strict";window.addEventListener("scroll",()=>{setTimeout(()=>{!function(){var t=window.driftt=window.drift=window.driftt||[];if(!t.init){if(t.invoked)return void(window.console&&console.error&&console.error("Drift snippet included twice."));t.invoked=!0,t.methods=["identify","config","track","reset","debug","show","ping","page","hide","off","on"],t.factory=function(e){return function(){var r=Array.prototype.slice.call(arguments);return r.unshift(e),t.push(r),t}},t.methods.forEach(function(e){t[e]=t.factory(e)}),t.load=function(t){var e=3e5*Math.ceil(new Date/3e5),r=document.createElement("script");r.type="text/javascript",r.async=!0,r.crossorigin="anonymous",r.src="https://js.driftt.com/include/"+e+"/"+t+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(r,n)}}}(),drift.SNIPPET_VERSION="0.3.1",drift.load("h4f9nubwfutr")},1e3)},{once:!0});
         `}
       </Script>
-      <main className={roboto.className}>
+      <main className={montserrat.className}>
         <Component {...pageProps} />
       </main>
     </>
