@@ -4,16 +4,16 @@ import trustpilotStars from "../public/images/stars-5-trustpilot.svg";
 
 const LandingPageRecord = () => {
   return (
-    <div className="bg-primary w-full py-28">
-      <div className="max-w-screen-xl flex mx-auto">
-        <div className="flex flex-col md:w-6/12">
-          <Image src={homepageImage} alt="details" width={800} height={800} />
+    <div className="bg-primary w-full">
+      <div className="flex justify-center py-28">
+        <div className="flex justify-center">
+          <Image src={homepageImage} alt="details" width={747} height={747} />
         </div>
-        <div className="flex flex-col justify-center md:w-6/12 max-w-xl">
+        <div className="flex flex-col justify-center max-w-xl">
           <h5 className="text-base font-semibold pb-3 text-yellow">
             All Under One Umbrella
           </h5>
-          <h1 className="text-6xl font-bold text-white">
+          <h1 className="text-6xl font-extrabold text-white">
             HR, Employment Law and Health & Safety services
           </h1>
           <div className="flex items-center">

@@ -18,7 +18,7 @@ const Navbar = () => {
           <div className="flex">
             <div className="logo-container flex items-center pr-6">
               <Link href="/">
-                <Image src={logo} alt="logo" width={160} />
+                <Image src={logo} alt="logo" width={140} />
               </Link>
             </div>
           </div>

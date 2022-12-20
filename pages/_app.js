@@ -16,7 +16,6 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Script id="google-tag-manager" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-45E6DTPQCV`}
       />
-
       <Script id="google-analytics" strategy="lazyOnload">
         {`function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-45E6DTPQCV");`}
       </Script>

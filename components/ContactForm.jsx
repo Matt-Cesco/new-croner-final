@@ -3,12 +3,12 @@ import homepageImage from "../public/images/homepage-image-1000.webp";
 
 const ContactForm = () => {
   return (
-    <div className="max-w-screen-xl mx-auto py-28">
-      <div className="w-full flex mx-auto">
-        <div className="flex flex-col justify-center md:w-6/12">
-          <div className="max-w-2xl pb-20">
-            <h3 className="text-4xl font-bold ">Speak to an Expert</h3>
-            <div className="pt-6">
+    <div className="w-full">
+      <div className="flex justify-center py-28">
+        <div className="flex flex-col justify-center max-w-xl">
+          <div className="max-w-xl pb-6">
+            <h3 className="text-4xl font-semibold ">Speak to an Expert</h3>
+            <div className="pt-12">
               <p class="text-base">
                 Explore how our services can support you managing your business
               </p>
@@ -120,7 +120,7 @@ const ContactForm = () => {
             <div className="w-full relative">
               <textarea
                 id="floating_textarea"
-                rows="10"
+                rows="4"
                 className="block py-3 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 focus:outline-none focus:ring-0 peer"
                 placeholder=" "
               ></textarea>
@@ -134,12 +134,12 @@ const ContactForm = () => {
             <div className="flex justify-center pt-12">
               <button className="relative bg-red text-white px-14 py-4 font-semibold group">
                 <span className="absolute w-0 h-full bg-red-800 group-hover:w-full transition-all ease-out duration-300 left-0 top-0 cursor-pointer"></span>
-                <span className="relative">Service & Pricing</span>
+                <span className="relative">Send</span>
               </button>
             </div>
           </form>
         </div>
-        <div className="flex flex-col md:w-6/12">
+        <div className="flex ">
           <Image src={homepageImage} alt="details" width={747} height={747} />
         </div>
       </div>

@@ -37,7 +37,7 @@ const SliderFree = () => {
             alt="text image"
           />
           <div className="absolute left-0 bottom-0 py-12 px-12">
-            <h5 className="text-3xl font-bold text-white pb-6">
+            <h5 className="text-3xl font-semibold text-white pb-6">
               Human Resources
             </h5>
             <div className="overflow-hidden">
@@ -56,7 +56,7 @@ const SliderFree = () => {
             alt="text image"
           />
           <div className="absolute bottom-0 py-12 px-12">
-            <h5 className="text-3xl font-bold text-white pb-6">
+            <h5 className="text-3xl font-semibold text-white pb-6">
               Employment Law
             </h5>
             <p className=" transition duration-300 ease-in-out text-white font-semibold">
@@ -73,7 +73,7 @@ const SliderFree = () => {
             alt="text image"
           />
           <div className="absolute bottom-0 py-12 px-12">
-            <h5 className="text-3xl font-bold text-white pb-6">
+            <h5 className="text-3xl font-semibold text-white pb-6">
               Health & Safety
             </h5>
             <p className=" transition duration-300 ease-in-out text-white font-semibold">
@@ -90,7 +90,7 @@ const SliderFree = () => {
             alt="text image"
           />
           <div className="absolute bottom-0 py-12 px-12">
-            <h5 className="text-3xl font-bold text-white pb-6">Pay & Reward</h5>
+            <h5 className="text-3xl font-semibold text-white pb-6">Pay & Reward</h5>
             <p className=" transition duration-300 ease-in-out text-white font-semibold">
               little description about the content about the content
             </p>
@@ -105,7 +105,7 @@ const SliderFree = () => {
             alt="text image"
           />
           <div className="absolute bottom-0 py-12 px-12">
-            <h5 className="text-3xl font-bold text-white pb-6">
+            <h5 className="text-3xl font-semibold text-white pb-6">
               Employee Wellbeing
             </h5>
             <p className=" transition duration-300 ease-in-out text-white font-semibold">
@@ -122,7 +122,7 @@ const SliderFree = () => {
             alt="text image"
           />
           <div className="absolute bottom-0 py-12 px-12">
-            <h5 className="text-3xl font-bold text-white pb-6">
+            <h5 className="text-3xl font-semibold text-white pb-6">
               Association Partnership
             </h5>
             <p className=" transition duration-300 ease-in-out text-white font-semibold">

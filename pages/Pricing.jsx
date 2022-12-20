@@ -24,8 +24,8 @@ const PricingSinglePage = () => {
     <>
       <Navbar />
       <div className="relative">
-          <Image src={banner} height={444} alt="banner image" />
-        </div>
+        <Image src={banner} height={444} alt="banner image" />
+      </div>
       <div className="banner-container flex flex-col max-w-screen-xl mx-auto">
         <div className="absolute top-1/4 z-10">
           <h2 className="text-6xl text-white font-bold pb-2">
@@ -35,16 +35,14 @@ const PricingSinglePage = () => {
             Choose your option below and explore our packages
           </h3>
           <div className="flex items-center">
-            <h5 className="text-white text-base max-w-xl py-6">
-              Excellent
-            </h5>
+            <h5 className="text-white text-base max-w-xl py-6">Excellent</h5>
             <div className="">
-            <Image 
-              src={trustpilotStars}
-              alt="trust pilot"
-              height={20}
-              className="mx-4"
-            />
+              <Image
+                src={trustpilotStars}
+                alt="trust pilot"
+                height={20}
+                className="mx-4"
+              />
             </div>
             <h5 className="text-white text-base max-w-xl py-6">
               1,655 reviews
@@ -169,12 +167,13 @@ const PricingSinglePage = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center">
-            <div className="bg-red"></div>
+          <div className="flex justify-center mt-[-2rem]">
             <div className="flex flex-col justify-between bg-primary text-white shadow-xl w-full p-6">
               <div className="">
-                <div className="bg-red text-center text-sm font-bold uppercase py-2 m-[-1.5rem]">most popular</div>
-                <h2 className="font-bold mb-2 text-2xl text-center pt-2 mt-8 pb-1">
+                <div className="bg-red text-center text-sm font-bold uppercase py-2 m-[-1.5rem]">
+                  most popular
+                </div>
+                <h2 className="font-bold mb-2 text-2xl text-center pt-14 pb-1">
                   Croner Complete
                 </h2>
                 <h5 className="text-sm text-center">
@@ -410,20 +409,18 @@ const PricingSinglePage = () => {
       <div className="w-full">
         <div className="max-w-screen-xl mx-auto">
           <div className="pt-28">
-            <h3 className="text-4xl font-bold pb-2">
+            <h3 className="text-4xl font-semibold pb-2">
               Trusted by 11,000+ businesses
             </h3>
             <div className="flex items-center">
-              <h5 className="text-black text-base max-w-xl py-6">
-                Excellent
-              </h5>
+              <h5 className="text-black text-base max-w-xl py-6">Excellent</h5>
               <div className="">
-              <Image 
-                src={trustpilotStars}
-                alt="trust pilot"
-                height={20}
-                className="mx-4"
-              />
+                <Image
+                  src={trustpilotStars}
+                  alt="trust pilot"
+                  height={20}
+                  className="mx-4"
+                />
               </div>
               <h5 className="text-black text-base max-w-xl py-6">
                 1,655 reviews
@@ -455,7 +452,7 @@ const PricingSinglePage = () => {
               <h6 className="text-xs uppercase pb-1 text-white">
                 &bull; Book a <span className="font-bold">free</span> Call
               </h6>
-              <h3 className="text-4xl text-white font-bold pb-3">
+              <h3 className="text-4xl text-white font-semibold pb-3">
                 Speak with an expert
               </h3>
             </div>
@@ -472,7 +469,9 @@ const PricingSinglePage = () => {
               FEEFO EXCELLENT WIDGET
             </h5>
             <div className="max-w-xl">
-              <h3 className="text-4xl font-bold ">Our customers success stories</h3>
+              <h3 className="text-4xl font-semibold ">
+                Our customers success stories
+              </h3>
               <h5 className="pt-12">
                 Explore how we help award-winning HR, Employment Law, and Health
                 & Safety services to business owners and senior leaders.

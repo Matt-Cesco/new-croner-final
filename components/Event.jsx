@@ -1,16 +1,17 @@
 import Image from "next/image";
 import homepageImage from "../public/images/homepage-image-1000.webp";
+import collageEvent from "../public/images/collage-events-res.jpg";
 
 const Event = ({ details }) => {
   return (
     <div className="max-w-full bg-primary">
-      <div className="max-w-screen-xl flex mx-auto py-28">
-        <div className="flex flex-col justify-center md:w-6/12">
+      <div className="flex justify-center py-28">
+        <div className="flex flex-col justify-center max-w-xl">
           <div className="flex">
             <p className=" text-lg font-bold">{details.sutitleTop}</p>
           </div>
           <div className="flex">
-            <p className="text-white text-4xl font-bold">{details.title}</p>
+            <p className="text-white text-6xl font-semibold">{details.title}</p>
           </div>
           <div className="flex pt-12">
             <p className="text-white">{details.description}</p>
@@ -31,8 +32,8 @@ const Event = ({ details }) => {
             </h5>
           </div>
         </div>
-        <div className="flex flex-col md:w-6/12">
-          <Image src={homepageImage} alt="details" width={747} height={747} />
+        <div className="flex">
+          <Image src={homepageImage} alt="details" width={747} />
         </div>
       </div>
     </div>

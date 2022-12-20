@@ -7,7 +7,7 @@ const SectionFreeRes = () => {
       <div className="max-w-screen-xl mx-auto pb-20">
         <div className="flex justify-between items-end">
           <div className="max-w-2xl">
-            <h3 className="text-4xl font-bold ">
+            <h3 className="text-4xl font-semibold ">
               Free resources for your business
             </h3>
             <div className="pt-6">

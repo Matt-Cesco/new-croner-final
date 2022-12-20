@@ -20,77 +20,150 @@ const DynamicComponentWithNoSSR = dynamic(() => import("../components/Modal"), {
   ssr: false,
 });
 
-const Resources = () => {
+const BlogPost = () => {
   return (
     <>
       <Navbar />
-      <div className="banner-container">
-        <div className="relative">
-          <Image src={banner} height={444} alt="banner image" />
-        </div>
-        <div className="absolute top-1/4 left-1/4 z-10 max-w-screen-xl mx-auto pt-24 px-4 md:px-0">
-          <h2 className="text-6xl text-white font-bold pb-2">Free Resources</h2>
-          <h3 className="text-xs font-bold uppercase text-white">
-            articles, infographics, case studies, free downloads
-          </h3>
-        </div>
-      </div>
-      <div className="max-w-screen-lg mx-auto pt-28 pb-28">
-        <form className="relative">
-          <input
-            type="text"
-            id="floating_standard"
-            className="block py-3 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-black focus:outline-none focus:ring-0 peer"
-            placeholder=" "
-          />
-          <button className="absolute right-0 top-5 cursor-pointer text-black">
-            <MagnifyingGlassIcon />
-          </button>
-          <label
-            htmlFor="floating_standard"
-            className="absolute text-xl text-white dark:text-gray-600 duration-300 transform -translate-y-10 scale-100 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10"
-          >
-            Enter you reasearch keyword here...
-          </label>
-        </form>
-      </div>
-      <div className="max-w-screen-lg mx-auto pb-20">
-        <div className="flex justify-between items-end">
-          <div className="max-w-xl">
-            <h3 className="text-4xl font-bold ">Featured FREE downloads</h3>
-            <h3 class="text-xs font-bold uppercase">free resources to download for your business</h3>
+      <div className="max-w-screen-lg mx-auto pt-28">
+        <div className="flex flex-col">
+          <p className="text-sm">Blog post</p>
+          <h2 className="text-5xl font-bold">
+            Statutory Maternity Pay & Leave
+          </h2>
+          <div className="flex pt-6">
+            <p className="text-base font-semibold">Share</p>
+            <p className="text-base font-semibold px-4">Download</p>
           </div>
-          <h5 className="text-red text-sm font-bold max-w-xl">
-            See All Free downloads &rarr;
-          </h5>
+          <Image
+            src={maternityImage}
+            className="py-14"
+            width={1024}
+            alt="text image"
+          />
         </div>
       </div>
-      <div className="w-full">
-        <div className="">
-          <SliderFree />
+      <div className="max-w-screen-lg mx-auto">
+        <p className="text-lg pt-6 font-semibold">
+          Maternity Pay is an employee right. When an employee takes leave
+          because of pregnancy, she can qualify for Maternity Pay. She can
+          qualify for up to 39 weeks, as long as she meets certain criteria.
+        </p>
+        <p className="text-lg pt-6">
+          As an employer, you may ask yourself questions such as “how much is
+          maternity pay” or “do you pay tax on maternity pay.” With changes made
+          to legislation and minimum payments, you might need a refresher on
+          what maternity pay is, and how it all works.
+        </p>
+        <h5 className="text-4xl font-semibold pt-10">
+          The history of UK maternity pay and leave
+        </h5>
+        <p className="text-lg pt-6">
+          In 1933, the government permitted women to take maternity leave in the
+          UK. However, until the introduction of the Sex Discrimination Act in
+          1975, women had no protection from dismissal. This was because of
+          reasons to do with maternity leave.
+        </p>
+        <p className="text-lg pt-6">
+          The Equality Act 2010 introduced legislation directly preventing
+          discrimination and unfair dismissal because of pregnancy. This is
+          because this is one of the protected characteristics. Therefore,
+          protected against all discrimination.
+        </p>
+        <h5 className="text-4xl font-semibold pt-10">
+          What is statutory maternity pay?
+        </h5>
+        <p className="text-lg pt-6">
+          This is the basic maternity pay that all employees are entitled to.
+          It's the legal minimum you must pay to any qualifying employee.
+          Statutory maternity pay lasts up to 39 weeks, to compliment the
+          maternity leave entitlement.
+        </p>
+        <p className="text-lg pt-6">
+          A company may have contractual maternity leave and pay. This will be
+          where you can implement your own leave policy but it cannot have less
+          leave entitlement or a lower pay entitlement than the statutory one.
+        </p>
+        <h5 className="text-4xl font-semibold pt-10">
+          How does maternity pay work?
+        </h5>
+        <p className="text-lg pt-6">
+          When an employee is having a baby, theyre entitled to a year of
+          statutory maternity leave. This is true no matter how long theyve been
+          in the job. To be eligible for this, an employee must:
+        </p>
+        <ul>
+          <li className="text-lg pt-6">
+            - Have an employment contract (it does not matter for how long.)
+          </li>
+          <li className="text-lg pt-6">- Given you the correct notice.</li>
+        </ul>
+        <h5 className="text-4xl font-semibold pt-10">
+          How much is statutory maternity pay?
+        </h5>
+        <p className="text-lg pt-6">
+          UK Statutory Maternity Pay (SMP) is paid for up to 39 weeks. On 1
+          April 2018, Statutory Maternity Pay in the UK increased to £145.18 or
+          90% of the employee s average weekly earnings. Maternity pay
+          eligibility requires the staff member to be legally classed as an
+          employee.
+        </p>
+        <p className="text-lg pt-6">
+          Maternity pay entitlement is for 39 weeks. This is on the condition
+          that the employee has been continuously in your employ for 26 weeks by
+          the time they must inform you of the pregnancy.
+        </p>
+        <p className="text-lg pt-6">
+          They must also have average earnings of at least £116 per week (from
+          April 2018) in the eight weeks (the qualifying week) before the 15th
+          week, before the 'expected week of childbirth' (EWC).
+        </p>
+        <p className="text-lg pt-6">
+          Employees who haven't worked for 26 weeks will have to claim maternity
+          allowance.
+        </p>
+        <h5 className="text-4xl font-extrabold pt-10">How Croner can assist</h5>
+        <p className="text-lg pt-6">
+          Croner is offering his services placeholder text placeholder text
+          Croner is offering his services placeholder text placeholder text
+          Croner is offering his services placeholder text placeholder text
+        </p>
+      </div>
+      <div className="w-full bg-red-dark mt-28">
+        <div className="max-w-screen-xl mx-auto py-12">
+          <div className="flex justify-between items-end">
+            <div className="py-3">
+              <ModalBlack />
+            </div>
+            <div className="">
+              <h6 className="text-xs uppercase pb-1 text-white">
+                &bull; Book a <span className="font-bold">free</span> Call
+              </h6>
+              <h3 className="text-4xl text-white font-semibold pb-3">
+                Speak with an expert
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
       <div className="max-w-screen-lg mx-auto">
         <div className="pt-28 pb-20">
           <div className="flex justify-between items-end">
-            <h5 className="text-red text-sm font-bold max-w-xl">
-              See All blog posts &rarr;
-            </h5>
             <div className="max-w-xl">
-              <h3 className="text-4xl font-bold ">Latest Blog posts</h3>
-              <h5 className="pt-12">
-                Explore how we help award-winning HR, Employment Law, and Health
-                & Safety services to business owners and senior leaders.
-              </h5>
+              <h3 className="text-4xl font-bold">
+                Related articles:
+              </h3>
             </div>
+            <h5 className="underline underline-offset-4 hover:text-red text-base font-semibold max-w-xl">
+              View all blog posts &rarr;
+            </h5>
           </div>
         </div>
       </div>
       <div className="w-full mx-auto pb-20">
-        <Slider />
+        <SliderFree />
       </div>
     </>
   );
 };
 
-export default Resources;
+export default BlogPost;
