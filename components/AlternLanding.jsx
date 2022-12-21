@@ -4,7 +4,7 @@ import trustpilotStars from "../public/images/stars-5-trustpilot.svg";
 import ArchiConcept from "../public/images/Dining_final.jpg";
 import ArchiConceptTwo from "../public/images/Front-Seating_final.webp";
 import ArchiConceptThree from "../public/images/Bar_final.jpg";
-import umbrellaWallpaper from "../public/images/wallpaper-umbrella.jpg";
+import umbrellaWallpaper from "../public/images/CrownDirect_Winter.jpg";
 
 const LandingPage = () => {
   return (
@@ -18,7 +18,7 @@ const LandingPage = () => {
             <div className="py-28">
               <div className="flex justify-start">
                 <div className="flex flex-col justify-start max-w-xl">
-                  <h5 className="text-base font-bold pb-3 text-red">
+                  <h5 className="text-base font-bold pb-3 text-yellow">
                     All Under One Umbrella
                   </h5>
                   <h1 className="text-6xl text-white font-extrabold primary-color">
