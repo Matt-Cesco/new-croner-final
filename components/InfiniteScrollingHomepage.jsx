@@ -6,7 +6,7 @@ const Marquee = () => (
   <div className="homepage-marquee-container">
     <div className="homepage-marquee-wrapper">
       <div className="homepage-marquee">
-        <ul className="flex justify-around">
+        <ul className="flex justify-around bg-black">
           <li>
             <Image src={KFClogo} alt="kfc logo" width={225} height={75} />
           </li>

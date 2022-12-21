@@ -37,14 +37,9 @@ const SliderFree = () => {
             alt="text image"
           />
           <div className="absolute left-0 bottom-0 py-12 px-12">
-            <h5 className="text-3xl font-semibold text-white pb-6">
+            <h5 className="text-2xl font-semibold text-white">
               Human Resources
             </h5>
-            <div className="overflow-hidden">
-              <p className="text-white font-semibold">
-                little description about the content about the content
-              </p>
-            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className="relative bg-purple-600 overflow-hidden">
@@ -56,12 +51,9 @@ const SliderFree = () => {
             alt="text image"
           />
           <div className="absolute bottom-0 py-12 px-12">
-            <h5 className="text-3xl font-semibold text-white pb-6">
+            <h5 className="text-2xl font-semibold text-white">
               Employment Law
             </h5>
-            <p className=" transition duration-300 ease-in-out text-white font-semibold">
-              little description about the content about the content
-            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide className="relative bg-green-600 overflow-hidden">
@@ -73,12 +65,9 @@ const SliderFree = () => {
             alt="text image"
           />
           <div className="absolute bottom-0 py-12 px-12">
-            <h5 className="text-3xl font-semibold text-white pb-6">
+            <h5 className="text-2xl font-semibold text-white">
               Health & Safety
             </h5>
-            <p className=" transition duration-300 ease-in-out text-white font-semibold">
-              little description about the content about the content
-            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide className="relative bg-blue-600 overflow-hidden">
@@ -90,10 +79,7 @@ const SliderFree = () => {
             alt="text image"
           />
           <div className="absolute bottom-0 py-12 px-12">
-            <h5 className="text-3xl font-semibold text-white pb-6">Pay & Reward</h5>
-            <p className=" transition duration-300 ease-in-out text-white font-semibold">
-              little description about the content about the content
-            </p>
+            <h5 className="text-2xl font-semibold text-white">Pay & Reward</h5>
           </div>
         </SwiperSlide>
         <SwiperSlide className="relative bg-orange-600 overflow-hidden">
@@ -105,12 +91,9 @@ const SliderFree = () => {
             alt="text image"
           />
           <div className="absolute bottom-0 py-12 px-12">
-            <h5 className="text-3xl font-semibold text-white pb-6">
+            <h5 className="text-2xl font-semibold text-white">
               Employee Wellbeing
             </h5>
-            <p className=" transition duration-300 ease-in-out text-white font-semibold">
-              little description about the content about the content
-            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide className="relative bg-yellow-600 overflow-hidden">

@@ -11,6 +11,7 @@ import mobilePhone from "../public/images/mobile-phone.jpg";
 import maternityImage from "../public/images/maternity-pay.png";
 import AccordionResources from "../components/AccordionResources";
 import Slider from "../components/Slider";
+import { FaLocationArrow, FaClock } from "react-icons/fa";
 
 const ModalBlack = dynamic(() => import("../components/ModalBlack"), {
   ssr: false,
@@ -61,7 +62,7 @@ const Resources = () => {
       <div className="max-w-screen-xl mx-auto pb-20">
         <div className="flex justify-between items-end">
           <div className="max-w-2xl">
-            <h3 className="text-4xl font-semibold ">Featured FREE Downloads</h3>
+            <h3 className="text-4xl font-bold">Featured FREE Downloads</h3>
             <div className="pt-6">
               <p class="text-base">
                 Explore our free download resources to support your business
@@ -82,7 +83,7 @@ const Resources = () => {
         <div className="pt-28 pb-20">
           <div className="flex justify-between items-end">
             <div className="max-w-xl">
-              <h3 className="text-4xl font-semibold">FREE Calculators</h3>
+              <h3 className="text-4xl font-bold">FREE Calculators</h3>
               <h5 className="pt-6">
                 Explore how we help award-winning HR, Employment Law, and Health
                 & Safety services to business owners and senior leaders.
@@ -101,7 +102,7 @@ const Resources = () => {
         <div className="">
           <div className="flex justify-between items-end">
             <div className="max-w-xl">
-              <h3 className="text-4xl font-semibold">Latest blog posts</h3>
+              <h3 className="text-4xl font-bold">Latest blog posts</h3>
               <h5 className="pt-6">
                 Explore how we help award-winning HR, Employment Law, and Health
                 & Safety services to business owners and senior leaders.
@@ -115,7 +116,7 @@ const Resources = () => {
       </div>
       <div className="max-w-screen-lg mx-auto pb-28">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="relative overflow-hidden">
+          <div className="overflow-hidden">
             <Link href="/BlogPost">
               <Image
                 src={maternityImage}
@@ -124,14 +125,21 @@ const Resources = () => {
                 height={341}
                 alt="text image"
               />
-              <div className="absolute bottom-0 py-6 px-12">
-                <h5 className="text-xl font-semibold text-white pb-3">
+              <div className="pt-3 pb-12">
+                <h5 className="text-lg font-semibold py-3">
                   Statutory Maternity Pay & Leave 
+                </h5>
+                <p className="text-sm">
+                  Maternity pay is offered to employees to help them financially
+                  as they raise their new baby.
+                </p>
+                <h5 className="underline underline-offset-2 text-red text-base font-semibold pt-3">
+                  Read this article &rarr;
                 </h5>
               </div>
             </Link>
           </div>
-          <div className="relative overflow-hidden">
+          <div className="overflow-hidden">
             <Link href="/BlogPost">
               <Image
                 src={maternityImage}
@@ -140,14 +148,21 @@ const Resources = () => {
                 height={341}
                 alt="text image"
               />
-              <div className="absolute bottom-0 py-6 px-12">
-                <h5 className="text-xl font-semibold text-white pb-3">
-                  Statutory Maternity Pay & Leave 
+              <div className="pt-3 pb-12">
+                <h5 className="text-xl font-semibold py-3">
+                  Sick Leave Entitlement in the UK
+                </h5>
+                <p className="text-base">
+                  Maternity pay is offered to employees to help them financially
+                  as they raise their new baby.
+                </p>
+                <h5 className="underline underline-offset-2 text-red-600 text-base font-semibold pt-3">
+                  Read this article &rarr;
                 </h5>
               </div>
             </Link>
           </div>
-          <div className="relative overflow-hidden">
+          <div className="overflow-hidden">
             <Link href="/BlogPost">
               <Image
                 src={maternityImage}
@@ -156,14 +171,21 @@ const Resources = () => {
                 height={341}
                 alt="text image"
               />
-              <div className="absolute bottom-0 py-6 px-12">
-                <h5 className="text-xl font-semibold text-white pb-3">
+              <div className="pt-3 pb-12">
+                <h5 className="text-lg font-semibold py-3">
                   Statutory Maternity Pay & Leave 
+                </h5>
+                <p className="text-sm">
+                  Maternity pay is offered to employees to help them financially
+                  as they raise their new baby.
+                </p>
+                <h5 className="underline underline-offset-2 text-red-600 text-base font-semibold pt-3">
+                  Read more &rarr;
                 </h5>
               </div>
             </Link>
           </div>
-          <div className="relative overflow-hidden">
+          <div className="overflow-hidden">
             <Link href="/BlogPost">
               <Image
                 src={maternityImage}
@@ -172,9 +194,22 @@ const Resources = () => {
                 height={341}
                 alt="text image"
               />
-              <div className="absolute bottom-0 py-6 px-12">
-                <h5 className="text-xl font-semibold text-white pb-3">
-                  Statutory Maternity Pay & Leave 
+              <div className="pt-3 pb-12">
+                <h5 className="text-xl font-semibold py-3">
+                  Manchester Business Event
+                </h5>
+                <div className="flex items-center pb-1">
+                  <FaLocationArrow />
+                  <p className="text-base px-2">
+                    AC Hotel Manchester Salford Quays
+                  </p>
+                </div>
+                <div className="flex items-center pb-3">
+                  <FaClock />
+                  <p className="text-base px-2">10:30 - 13:00</p>
+                </div>
+                <h5 className="underline underline-offset-2 text-red-600 text-base font-semibold pt-3">
+                  Learn Event details &rarr;
                 </h5>
               </div>
             </Link>

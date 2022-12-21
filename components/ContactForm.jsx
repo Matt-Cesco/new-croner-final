@@ -1,13 +1,15 @@
 import Image from "next/image";
 import homepageImage from "../public/images/homepage-image-1000.webp";
+import ArchiConcept from "../public/images/Dining_final.jpg";
+import ArchiConceptThree from "../public/images/Bar_final.jpg";
 
 const ContactForm = () => {
   return (
     <div className="w-full">
-      <div className="flex justify-center py-28">
+      <div className="flex justify-end pb-28">
         <div className="flex flex-col justify-center max-w-xl">
           <div className="max-w-xl pb-6">
-            <h3 className="text-4xl font-semibold ">Speak to an Expert</h3>
+            <h3 className="text-4xl font-extrabold ">Speak to an Expert</h3>
             <div className="pt-12">
               <p class="text-base">
                 Explore how our services can support you managing your business
@@ -140,7 +142,7 @@ const ContactForm = () => {
           </form>
         </div>
         <div className="flex ">
-          <Image src={homepageImage} alt="details" width={747} height={747} />
+          <Image src={ArchiConceptThree} alt="details" width={1013} />
         </div>
       </div>
     </div>
