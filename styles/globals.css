@@ -327,7 +327,7 @@
 .swiper-free-custom-scrollbar{
   height: 1px;
   background: rgba(0,0,0,.4);
-  width: 80%;
+  width: 90%;
 }
 
 .swiper-free-custom-scrollbar .swiper-scrollbar-drag{
@@ -340,7 +340,7 @@
 .swiper-service-custom-scrollbar{
   height: 1px;
   background: rgba(0,0,0,.4);
-  width: 80%;
+  width: 90%;
 }
 
 .swiper-service-custom-scrollbar .swiper-scrollbar-drag{

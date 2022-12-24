@@ -5,18 +5,18 @@ import ArchiConceptThree from "../public/images/Bar_final.jpg";
 
 const ContactForm = () => {
   return (
-    <div className="w-full">
-      <div className="flex justify-end pb-28">
+    <div className="w-full flex justify-center">
+      <div className="max-w-screen-2xl flex pb-28 pt-12">
         <div className="flex flex-col justify-center max-w-xl">
-          <div className="max-w-xl pb-6">
-            <h3 className="text-4xl font-extrabold ">Speak to an Expert</h3>
+          <div className="max-w-xl">
+            <h3 className="text-4xl font-bold ">Speak to an Expert</h3>
             <div className="pt-12">
               <p class="text-base">
                 Explore how our services can support you managing your business
               </p>
             </div>
           </div>
-          <form className="flex flex-col justify-center">
+          <form className="flex flex-col justify-center max-w-3xl pt-12">
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <div className="relative">
@@ -141,8 +141,8 @@ const ContactForm = () => {
             </div>
           </form>
         </div>
-        <div className="flex ">
-          <Image src={ArchiConceptThree} alt="details" width={1013} />
+        <div className="flex max-w-sm">
+          <Image src={ArchiConceptThree} alt="details" width={384} />
         </div>
       </div>
     </div>

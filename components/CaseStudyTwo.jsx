@@ -7,15 +7,15 @@ import ArchiConcept from "../public/images/Dining_final.jpg";
 
 const CaseStudyTwo = () => {
   return (
-    <div className="max-w-full">
-      <div className="flex justify-start py-12">
+    <div className="w-full flex justify-center pb-12">
+      <div className="max-w-screen-2xl flex">
         <div className="flex justify-center ">
-          <div className="flex">
-            <Image src={ArchiConcept} alt="details" width={1013} />
+          <div className="flex max-w-3xl">
+            <Image src={ArchiConcept} alt="details" width={768} />
           </div>
-          <div className="flex flex-col justify-center max-w-xl">
+          <div className="flex flex-col justify-center max-w-sm">
             <div className="flex">
-              <p className="text-6xl font-extrabold">
+              <p className="text-6xl font-bold">
                 11,000+ businesses have been where you are today.
               </p>
             </div>
