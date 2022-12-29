@@ -7,9 +7,10 @@ import Slider from "../components/Slider";
 import Link from "next/link";
 import Image from "next/image";
 import banner from "../public/images/banner-container-hero.webp";
-import trustpilotStars from '../public/images/stars-5-trustpilot.svg';
-import ModalGetQuoteBlack from '../components/ModalGetQuoteBlack';
-import ModalGetQuoteWhite from '../components/ModalGetQuoteWhite';
+import trustpilotStars from "../public/images/stars-5-trustpilot.svg";
+import ModalGetQuoteBlack from "../components/ModalGetQuoteBlack";
+import ModalGetQuoteWhite from "../components/ModalGetQuoteWhite";
+import triangles from "../public/images/image-landing-mitul.webp";
 
 const DynamicComponentWithNoSSR = dynamic(() => import("../components/Modal"), {
   ssr: false,
@@ -23,49 +24,51 @@ const PricingSinglePage = () => {
   return (
     <>
       <Navbar />
-      <div className="relative">
-        <Image src={banner} height={444} alt="banner image" />
-      </div>
-      <div className="banner-container flex flex-col max-w-screen-xl mx-auto">
-        <div className="absolute top-1/4 z-10">
-          <h2 className="text-6xl text-white font-bold pb-2">
-            Pricing Packages
-          </h2>
-          <h3 className="text-xs font-bold uppercase text-white">
-            Choose your option below and explore our packages
-          </h3>
-          <div className="flex items-center">
-            <h5 className="text-white text-base max-w-xl py-6">Excellent</h5>
-            <div className="">
-              <Image
-                src={trustpilotStars}
-                alt="trust pilot"
-                height={20}
-                className="mx-4"
-              />
+
+      <div className="w-full relative bg-primary">
+        <div className="ml-96 mx-auto ">
+          <div className="py-28">
+            <div className="flex flex-col justify-start">
+              <div className="flex justify-start">
+                <h1 className="text-6xl text-gray-100 font-extrabold z-20">
+                  Pricing <span className="text-6xl font-thin">Packages</span>
+                </h1>
+              </div>
+              <div className="flex items-center pt-12">
+                <h5 className="text-white text-base">Excellent</h5>
+                <div className="">
+                  <Image
+                    src={trustpilotStars}
+                    alt="trust pilot"
+                    height={20}
+                    className="mx-4"
+                  />
+                </div>
+                <h5 className="text-white text-base">1,655 reviews</h5>
+              </div>
             </div>
-            <h5 className="text-white text-base max-w-xl py-6">
-              1,655 reviews
-            </h5>
+          </div>
+        </div>
+        <div className="absolute top-0 right-96 flex justify-center z-10">
+          <div className="max-w-sm">
+            <Image src={triangles} alt="details" width={384} />
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto pt-28 px-4 md:px-0">
+      <div className="max-w-6xl mx-auto pt-36 px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex justify-center">
-            <div className="flex flex-col justify-between bg-gray-100 shadow-xl w-full p-6">
+            <div className="flex flex-col justify-between bg-gray-100 shadow-2xl w-full p-6">
               <div className="">
                 <div className="">
-                  <h2 className="font-bold mb-2 text-2xl text-center pt-2 pb-1">
+                  <h2 className="font-extrabold mb-2 text-2xl text-center pt-2 pb-1">
                     Croner Employment
                   </h2>
-                  <h5 className="text-sm text-center">
-                    HR and employment law support
-                  </h5>
+                  <h5 className="text-sm text-center">HR and Employment law</h5>
                   <div className="flex justify-center py-6">
                     <div className="">
                       <div className="text-sm text-gray-600">FROM</div>
-                      <div className="text-6xl font-bold primary-color">
+                      <div className="text-6xl font-extrabold primary-color">
                         £6.89
                         <span className="text-sm font-normal text-gray-500">
                           /mo
@@ -149,7 +152,7 @@ const PricingSinglePage = () => {
                 <div className="pb-2.5">
                   <p className="text-xs">
                     Explore this package and get an{" "}
-                    <span className="font-bold">Instant</span> custom{" "}
+                    <span className="font-bold">Instant</span>{" "}
                     <span className="font-bold">Quote</span>
                   </p>
                 </div>
@@ -168,21 +171,21 @@ const PricingSinglePage = () => {
             </div>
           </div>
           <div className="flex justify-center mt-[-2rem]">
-            <div className="flex flex-col justify-between bg-primary text-white shadow-xl w-full p-6">
+            <div className="flex flex-col justify-between bg-primary text-white shadow-2xl w-full p-6">
               <div className="">
                 <div className="bg-red text-center text-sm font-bold uppercase py-2 m-[-1.5rem]">
                   most popular
                 </div>
-                <h2 className="font-bold mb-2 text-2xl text-center pt-14 pb-1">
+                <h2 className="font-extrabold mb-2 text-2xl text-center pt-14 pb-1">
                   Croner Complete
                 </h2>
                 <h5 className="text-sm text-center">
-                  HR, Employment law and Health & safety support
+                  HR, Employment law and Health & safety
                 </h5>
                 <div className="flex justify-center py-6">
                   <div className="">
                     <div className="text-sm text-gray-400">FROM</div>
-                    <div className="text-6xl font-bold">
+                    <div className="text-6xl font-extrabold">
                       £9.71
                       <span className="text-sm font-normal text-gray-400">
                         /mo
@@ -245,7 +248,7 @@ const PricingSinglePage = () => {
                 <div className="pb-2.5">
                   <p className="text-xs">
                     Explore this package and get an{" "}
-                    <span className="font-bold">Instant</span> custom{" "}
+                    <span className="font-bold">Instant</span>{" "}
                     <span className="font-bold">Quote</span>
                   </p>
                 </div>
@@ -264,19 +267,17 @@ const PricingSinglePage = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="flex flex-col justify-between bg-gray-100 shadow-xl w-full p-6">
+            <div className="flex flex-col justify-between bg-gray-100 shadow-2xl w-full p-6">
               <div className="">
                 <div className="">
-                  <h2 className="font-bold mb-2 text-2xl text-center pt-2 pb-1">
+                  <h2 className="font-extrabold mb-2 text-2xl text-center pt-2 pb-1">
                     Croner Health & Safety
                   </h2>
-                  <h5 className="text-sm text-center">
-                    Health & safety support
-                  </h5>
+                  <h5 className="text-sm text-center">Health & Safety</h5>
                   <div className="flex justify-center py-6">
                     <div className="">
                       <div className="text-sm text-gray-600">FROM</div>
-                      <div className="text-6xl font-bold primary-color">
+                      <div className="text-6xl font-extrabold primary-color">
                         £3.90
                         <span className="text-sm font-normal text-gray-500">
                           /mo
@@ -386,7 +387,7 @@ const PricingSinglePage = () => {
                 <div className="pb-2.5">
                   <p className="text-xs">
                     Explore this package and get an{" "}
-                    <span className="font-bold">Instant</span> custom{" "}
+                    <span className="font-bold">Instant</span>{" "}
                     <span className="font-bold">Quote</span>
                   </p>
                 </div>
@@ -406,14 +407,54 @@ const PricingSinglePage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full">
-        <div className="max-w-screen-xl mx-auto">
-          <div className="pt-28">
-            <h3 className="text-4xl font-semibold pb-2">
-              Trusted by 11,000+ businesses
-            </h3>
+      <div className="max-w-6xl mx-auto">
+        <div className="pt-28 pb-12">
+          <div className="flex justify-between items-end">
+            <div className="max-w-3xl">
+              <h3 className="text-4xl font-extrabold">
+                Our customers success stories
+              </h3>
+              <h5 className="pt-6">
+                Explore how we help award-winning HR, Employment Law, and Health
+                & Safety services to business owners and senior leaders.
+              </h5>
+            </div>
+            <h5 className="text-yellow-600 text-sm font-bold max-w-sm">
+              FEEFO EXCELLENT WIDGET
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-screen-2xl mx-auto">
+        <Slider />
+      </div>
+      <div className="w-full bg-primary mt-28">
+        <div className="max-w-6xl mx-auto py-12">
+          <div className="flex justify-between items-end">
+            <div className="py-3">
+              <DynamicComponentWithNoSSR />
+            </div>
+            <div className="">
+              <h6 className="text-xs uppercase pb-1 text-white">
+                &bull; Book a <span className="font-bold">free</span> Call
+              </h6>
+              <h3 className="text-4xl text-white font-extrabold pb-3">
+                Speak with an expert
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full py-28">
+        <div className="pl-96 flex">
+          <h3 className="text-6xl font-extrabold pb-2">
+            Trusted by 11,000+ businesses
+          </h3>
+        </div>
+        <div className="max-w-6xl mx-auto pt-12">
+          <div className="max-w-sm">
             <div className="flex items-center">
-              <h5 className="text-black text-base max-w-xl py-6">Excellent</h5>
+              <h5 className="text-black text-base">Excellent</h5>
               <div className="">
                 <Image
                   src={trustpilotStars}
@@ -422,22 +463,23 @@ const PricingSinglePage = () => {
                   className="mx-4"
                 />
               </div>
-              <h5 className="text-black text-base max-w-xl py-6">
-                1,655 reviews
-              </h5>
+              <h5 className="text-black text-base">1,655 reviews</h5>
             </div>
-            <h5 className="max-w-xl text-base pb-2">
+            <h5 className="text-base pt-6">
               From gross misconduct and disciplinaries, to tribunal cases and
-              redundancies — we’ve handled it all. Our HR, health & safety, and
+              redundancies — we ve handled it all. Our HR, health & safety, and
               pay & reward support has helped businesses through the toughest
               periods of their growth.
             </h5>
-            <h5 className="max-w-xl text-base py-2">
+          </div>
+          <div className="max-w-6xl pt-12">
+            <h5 className="text-base">
               Get a{" "}
-              <span className="text-sm font-bold uppercase">
+              <span className="text-sm font-bold text-red underline uppercase">
                 Free Consultation
               </span>{" "}
-              and discuss the perfect package for your business today.
+              with our experts and discuss the perfect package for your business
+              today.
             </h5>
           </div>
         </div>
@@ -445,59 +487,6 @@ const PricingSinglePage = () => {
           <Marquee />
         </div>
       </div>
-      <div className="w-full bg-red-dark mt-28">
-        <div className="max-w-screen-xl mx-auto py-12">
-          <div className="flex justify-between items-end">
-            <div className="">
-              <h6 className="text-xs uppercase pb-1 text-white">
-                &bull; Book a <span className="font-bold">free</span> Call
-              </h6>
-              <h3 className="text-4xl text-white font-semibold pb-3">
-                Speak with an expert
-              </h3>
-            </div>
-            <div className="py-3">
-              <ModalBlack />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="max-w-screen-xl mx-auto">
-        <div className="pt-28 pb-20">
-          <div className="flex justify-between items-end">
-            <h5 className="text-yellow-600 text-sm font-bold max-w-xl">
-              FEEFO EXCELLENT WIDGET
-            </h5>
-            <div className="max-w-xl">
-              <h3 className="text-4xl font-semibold ">
-                Our customers success stories
-              </h3>
-              <h5 className="pt-12">
-                Explore how we help award-winning HR, Employment Law, and Health
-                & Safety services to business owners and senior leaders.
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="w-full">
-        <div className="pb-12">
-          <Slider />
-        </div>
-      </div>
-      <div className="max-w-screen-xl mx-auto pb-12">
-        <h5 className="max-w-xl pt-12 pb-4">
-          Contact us and{" "}
-          <span className="text-sm font-bold text-red uppercase">
-            we can help you
-          </span>{" "}
-          to discuss the perfect package for your business today.
-        </h5>
-        <div className="flex py-6">
-          <DynamicComponentWithNoSSR />
-        </div>
-      </div>
-
       <Footer />
     </>
   );

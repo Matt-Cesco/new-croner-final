@@ -15,7 +15,7 @@ const CaseStudyTwo = () => {
           </div>
           <div className="flex flex-col justify-center max-w-sm">
             <div className="flex">
-              <p className="text-6xl font-bold">
+              <p className="text-6xl font-extrabold">
                 11,000+ businesses have been where you are today.
               </p>
             </div>
@@ -29,7 +29,7 @@ const CaseStudyTwo = () => {
               <InfiniteScrollingHomepage />
             </div>
             <div className="flex">
-              <h5 className="text-red text-base font-semibold pt-12">
+              <h5 className="underline underline-offset-2 text-red-600 text-base font-semibold pt-12">
                 Read their stories &rarr;
               </h5>
             </div>

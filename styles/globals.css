@@ -41,22 +41,6 @@
   .bg-lightblue{
     background-color: #1fa5d8;
   }
-  .fs-xsm{
-    font-size: 0.75rem;
-  }
-  .fs-sm{
-    font-size: 0.9rem;
-  }
-  .fs-md{
-    font-size: 1.05rem;
-  }
-  .fs-lg{
-    font-size: 1rem;
-    color: #011933;
-  }
-  .fs-xl{
-    font-size: 1.5rem;
-  }
 }
 
 /* Components */

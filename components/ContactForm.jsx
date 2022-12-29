@@ -2,16 +2,17 @@ import Image from "next/image";
 import homepageImage from "../public/images/homepage-image-1000.webp";
 import ArchiConcept from "../public/images/Dining_final.jpg";
 import ArchiConceptThree from "../public/images/Bar_final.jpg";
+import triangles from "../public/images/image-landing-mitul.webp";
 
 const ContactForm = () => {
   return (
     <div className="w-full flex justify-center">
-      <div className="max-w-screen-2xl flex pb-28 pt-12">
-        <div className="flex flex-col justify-center max-w-xl">
-          <div className="max-w-xl">
+      <div className="max-w-screen-2xl w-full flex justify-center pb-28 pt-12">
+        <div className="flex flex-col w-full max-w-3xl">
+          <div className="w-full">
             <h3 className="text-4xl font-bold ">Speak to an Expert</h3>
             <div className="pt-12">
-              <p class="text-base">
+              <p className="text-base">
                 Explore how our services can support you managing your business
               </p>
             </div>
@@ -142,7 +143,7 @@ const ContactForm = () => {
           </form>
         </div>
         <div className="flex max-w-sm">
-          <Image src={ArchiConceptThree} alt="details" width={384} />
+          <Image src={triangles} alt="details" width={384} />
         </div>
       </div>
     </div>

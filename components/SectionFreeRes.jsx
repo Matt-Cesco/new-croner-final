@@ -11,7 +11,7 @@ const SectionFreeRes = () => {
               Free resources for your business
             </h3>
             <div className="pt-6">
-              <p class="text-base">
+              <p className="text-base">
                 Explore our free content to help you managing your business
               </p>
             </div>
@@ -22,7 +22,7 @@ const SectionFreeRes = () => {
         </div>
       </div>
       <div className="w-full">
-        <div className="">
+        <div className="max-w-screen-2xl mx-auto">
           <SliderFree />
         </div>
       </div>
