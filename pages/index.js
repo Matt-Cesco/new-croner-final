@@ -8,6 +8,7 @@ import AlternLanding from "../components/AlternLanding";
 import SupportBusinessRecord from "../components/SupportBusinessRecord";
 import SectionFreeRes from "../components/SectionFreeRes";
 
+
 export default function Home({ homepage }) {
   return (
     <div>
