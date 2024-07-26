@@ -1,6 +1,5 @@
 import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
-
 import { CaretDownIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
@@ -16,7 +15,7 @@ const SecondNavbar = () => {
             <ul className="List one">
               <li style={{ gridRow: "span 3" }}>
                 <NavigationMenu.Link asChild>
-                  <Link className="Callout" href="/">
+                  <p className="Callout" href="/">
                     <svg
                       aria-hidden
                       width="38"
@@ -32,44 +31,23 @@ const SecondNavbar = () => {
                     <p className="CalloutText">
                       Unstyled, accessible components for React.
                     </p>
-                  </Link>
+                  </p>
                 </NavigationMenu.Link>
               </li>
-
-              <li
-                className="ListItem"
-                href="https://stitches.dev/"
-                title="Stitches"
-              >
-                CSS-in-JS with best-in-class developer experience.
+              <li className="grid">
+                <div className="">frist grid</div>
+                <div className="">second grid</div>
               </li>
-              <li className="ListItem" href="/colors" title="Colors">
-                Beautiful, thought-out palettes with auto dark mode.
-              </li>
-              <li
-                className="ListItem"
-                href="https://icons.radix-ui.com/"
-                title="Icons"
-              >
-                A crisp set of 15x15 icons, balanced and consistent.
-              </li>
+              <li>asd</li>
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
         <NavigationMenu.Item className="pt-3 pb-1">
           <NavigationMenu.Link
             className="NavigationMenuLink font-semibold text-sm"
-            href="PricingSinglePage"
+            href="Pricing"
           >
-            PricingSinglePage
-          </NavigationMenu.Link>
-        </NavigationMenu.Item>
-        <NavigationMenu.Item className="pt-3 pb-1">
-          <NavigationMenu.Link
-            className="NavigationMenuLink font-semibold text-sm"
-            href="PricingMultiPage"
-          >
-            PricingMultiPage
+            Pricing
           </NavigationMenu.Link>
         </NavigationMenu.Item>
         <NavigationMenu.Item className="pt-3 pb-1">
@@ -96,7 +74,6 @@ const SecondNavbar = () => {
             About
           </NavigationMenu.Link>
         </NavigationMenu.Item>
-
         <NavigationMenu.Indicator className="NavigationMenuIndicator">
           <div className="Arrow" />
         </NavigationMenu.Indicator>

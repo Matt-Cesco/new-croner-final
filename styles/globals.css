@@ -6,7 +6,7 @@
 
 @layer base {
   .primary-color{
-    color: #243447;
+    color: #041629;
   }
   .text-primary-color{
     color: #748497;
@@ -56,9 +56,10 @@
   }
 }
 
+
 /* Components */
 
-@layer components {
+/* @layer components {
   .btn-primary-tl {
     @apply bg-red text-white font-bold pt-3 pb-4 px-7 rounded-full rounded-tl-none;
   }
@@ -68,7 +69,7 @@
   .btn-dark-red{
     @apply bg-red-dark text-white py-4 px-8;
   }
-}
+} */
 
 
 /* reset */

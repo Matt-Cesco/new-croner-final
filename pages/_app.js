@@ -1,35 +1,17 @@
-import { Montserrat } from '@next/font/google';
-import '../styles/globals.css';
-import Script from 'next/script';
+import { Inter } from "@next/font/google";
+import "../styles/globals.css";
+import Script from "next/script";
 
 // If loading a variable font, you don't need to specify the font weight
-const roboto = Montserrat({
-  subsets: ["latin"],
-});
-
+const inter = Inter({ subsets: ["latin"] });
 
 export default function MyApp({ Component, pageProps }) {
-   const metaPixel = `
-         window.addEventListener('mousemove', () => {
-            setTimeout(() => {
-         !function(f,b,e,v,n,t,s)
-         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-         n.queue=[];t=b.createElement(e);t.async=!0;
-         t.src=v;s=b.getElementsByTagName(e)[0];
-         s.parentNode.insertBefore(t,s)}(window, document,'script',
-         'https://connect.facebook.net/en_US/fbevents.js');
-         fbq('init', '{your-pixel-id-goes-here}');
-         fbq('track', 'PageView');
-         }, 250);
-         }, {
-            once: true
-         });
+  const metaPixel = `
+         window.addEventListener('mousemove',()=>{setTimeout(()=>{!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','{your-pixel-id-goes-here}');fbq('track','PageView');},250);},{once:true});
          `;
   return (
     <>
-      <Script
+      {/* <Script
         id="google-tag-manager"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-45E6DTPQCV`}
@@ -42,8 +24,8 @@ export default function MyApp({ Component, pageProps }) {
 
          gtag('config', 'G-45E6DTPQCV');
       `}
-      </Script>
-      <Script id="marketo-munchkin" strategy="lazyOnload">
+      </Script> */}
+      {/* <Script id="marketo-munchkin" strategy="lazyOnload">
         {`(function() {
             var didInit = false;
             function initMunchkin() {
@@ -64,8 +46,8 @@ export default function MyApp({ Component, pageProps }) {
             s.onload = initMunchkin;
             document.getElementsByTagName('head')[0].appendChild(s);
             })();`}
-      </Script>
-      <Script id="ruler-script" strategy="lazyOnload">
+      </Script> */}
+      {/* <Script id="ruler-script" strategy="lazyOnload">
         {`window.addEventListener('mousemove', () => {
             setTimeout(() => {
             var __raconfig = __raconfig || {};
@@ -86,8 +68,8 @@ export default function MyApp({ Component, pageProps }) {
             once: true
          });
          `}
-      </Script>
-      <Script id="metaPixel-script" strategy="lazyOnload">
+      </Script> */}
+      {/* <Script id="metaPixel-script" strategy="lazyOnload">
         {metaPixel}
       </Script>
       <Script id="hotjar-script" strategy="lazyOnload">
@@ -106,8 +88,8 @@ export default function MyApp({ Component, pageProps }) {
             once: true
          });
          `}
-      </Script>
-      <Script id="drift-script" strategy="lazyOnload">
+      </Script> */}
+      {/* <Script id="drift-script" strategy="lazyOnload">
         {`"use strict";
          window.addEventListener('scroll', () => {
             setTimeout(() => {
@@ -138,8 +120,8 @@ export default function MyApp({ Component, pageProps }) {
             once: true
          });
         `}
-      </Script>
-      <main className={roboto.className}>
+      </Script> */}
+      <main className={inter.className}>
         <Component {...pageProps} />
       </main>
     </>
