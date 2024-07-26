@@ -11,7 +11,8 @@ import mobilePhone from "../public/images/mobile-phone.jpg";
 import maternityImage from "../public/images/maternity-pay.png";
 import AccordionResources from "../components/AccordionResources";
 import Slider from "../components/Slider";
-import homepageImage from "../public/images/homepage-image-1000.webp";
+import { FaLocationArrow, FaClock } from "react-icons/fa";
+import triangles from "../public/images/image-landing-mitul.webp";
 
 const ModalBlack = dynamic(() => import("../components/ModalBlack"), {
   ssr: false,
@@ -25,101 +26,132 @@ const Resources = () => {
   return (
     <>
       <Navbar />
-      <div className="banner-container">
-        <div className="relative">
-          <Image src={banner} height={444} alt="banner image" />
-        </div>
-        <div className="absolute top-1/4 left-1/4 z-10 max-w-screen-xl mx-auto pt-24 px-4 md:px-0">
-          <h2 className="text-6xl text-white font-bold pb-2">Free Resources</h2>
-          <h3 className="text-xs font-bold uppercase text-white">
-            articles, infographics, case studies, free downloads
-          </h3>
-        </div>
-      </div>
-      <div className="max-w-screen-lg mx-auto pt-28 pb-28">
-        <form className="relative">
-          <input
-            type="text"
-            id="floating_standard"
-            className="block py-3 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-black focus:outline-none focus:ring-0 peer"
-            placeholder=" "
-          />
-          <button className="absolute right-0 top-5 cursor-pointer text-black">
-            <MagnifyingGlassIcon />
-          </button>
-          <label
-            htmlFor="floating_standard"
-            className="absolute text-xl text-white dark:text-gray-600 duration-300 transform -translate-y-10 scale-100 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10"
-          >
-            Enter you reasearch keyword here...
-          </label>
-        </form>
-      </div>
-      <div className="max-w-screen-lg mx-auto pb-20">
-        <div className="flex justify-between items-end">
-          <div className="max-w-xl">
-            <h3 className="text-4xl font-bold ">Featured FREE downloads</h3>
-            <h3 class="text-xs font-bold uppercase">
-              free resources to download for your business
-            </h3>
+      <div className="w-full relative bg-primary">
+        <div className="ml-96 mx-auto ">
+          <div className="py-28">
+            <div className="flex flex-col justify-start">
+              <div className="flex justify-start">
+                <h1 className="text-6xl text-gray-100 font-extrabold z-20">
+                  Free{" "}
+                  <span className="italic text-6xl text-red font-thin">
+                    Resources
+                  </span>
+                </h1>
+              </div>
+            </div>
           </div>
-          <h5 className="text-red text-sm font-bold max-w-xl">
-            See All Free downloads &rarr;
+        </div>
+        <div className="absolute top-0 right-96 flex justify-center z-10">
+          <div className="max-w-sm">
+            <Image src={triangles} alt="details" width={384} />
+          </div>
+        </div>
+      </div>
+      <div className="max-w-6xl mx-auto py-28">
+        <div className="max-w-3xl">
+          <form className="relative">
+            <input
+              type="text"
+              id="floating_standard"
+              className="block py-3 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-black focus:outline-none focus:ring-0 peer"
+              placeholder=" "
+            />
+            <button className="absolute right-0 top-5 cursor-pointer text-black">
+              <MagnifyingGlassIcon />
+            </button>
+            <label
+              htmlFor="floating_standard"
+              className="absolute text-base text-white dark:text-gray-600 duration-300 transform -translate-y-10 scale-100 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10"
+            >
+              Enter you reasearch keyword here...
+            </label>
+          </form>
+        </div>
+      </div>
+      <div className="max-w-6xl mx-auto pb-12">
+        <div className="flex justify-between items-end">
+          <div className="max-w-3xl">
+            <h3 className="text-4xl font-extrabold">Featured FREE Downloads</h3>
+            <div className="pt-6">
+              <p class="text-base">
+                Please feel free to download and use these templates for your
+                business on a wide range of HR to Health & Safety and Employment
+                Law matters. Can't find what you're looking for? Get in touch
+                with our advisors today.
+              </p>
+            </div>
+          </div>
+          <h5 className="underline underline-offset-4 hover:text-red text-base font-semibold max-w-xl">
+            View all FREE downloads &rarr;
           </h5>
         </div>
       </div>
-      <div className="w-full">
-        <div className="">
-          <SliderFree />
-        </div>
+      <div className="max-w-screen-2xl mx-auto">
+        <SliderFree />
       </div>
-      <div className="max-w-screen-xl mx-auto flex pt-28">
-        <div className="flex flex-col md:w-3/6">
-          <Image
-            src={homepageImage}
-            alt="image text"
-            width={640}
-            height={640}
-          />
-        </div>
-        <div className="flex flex-col justify-center md:w-2/6">
-          <div className="max-w-xl">
-            <h3 className="text-4xl font-bold ">FREE online calculators</h3>
-            <h5 className="font-bold pt-12">
-              Managing pay. Managing holiday. It can be taxing and
-              time-consuming—especially if numbers aren not your forte.
-            </h5>
-            <ul className="max-w-xl text-base pt-6">
-              <li className="py-1">Maternity Calculator</li>
-              <li className="py-1">Maternity Calculator</li>
-              <li className="py-1">Maternity Calculator</li>
-              <li className="py-1">Maternity Calculator</li>
-              <li className="py-1">Maternity Calculator</li>
-            </ul>
-            <h5 className="text-red text-sm font-bold pt-6">
-              See All Calculators &rarr;
-            </h5>
-          </div>
-        </div>
-      </div>
-      <div className="max-w-screen-lg mx-auto">
-        <div className="pt-28 pb-20">
-          <div className="flex justify-between items-end">
-            <div className="max-w-xl">
-              <h3 className="text-4xl font-bold ">Latest Blog posts</h3>
-              <h5 className="pt-12">
-                Explore how we help award-winning HR, Employment Law, and Health
-                & Safety services to business owners and senior leaders.
-              </h5>
+      <div className="max-w-6xl mx-auto pt-28 pb-12">
+        <div className="flex justify-between items-end">
+          <div className="max-w-3xl">
+            <h3 className="text-4xl font-extrabold">FREE Calculators</h3>
+            <div className="pt-6">
+              <p class="text-base">
+                Use our free online calculators to understand your obligations
+                when it comes to maternity and redundancy pay or holiday leave
+                entitlements for your employees. Alternatively get in touch
+                today for free advice.
+              </p>
             </div>
-            <h5 className="text-red text-sm font-bold max-w-xl">
-              See All blog posts &rarr;
-            </h5>
           </div>
+          <h5 className="underline underline-offset-4 hover:text-red text-base font-semibold max-w-xl">
+            View all FREE calculators &rarr;
+          </h5>
         </div>
       </div>
-      <div className="w-full mx-auto pb-20">
+      <div className="max-w-screen-2xl mx-auto">
         <Slider />
+      </div>
+      <div className="max-w-6xl mx-auto pt-28 pb-12">
+        <div className="flex justify-between items-end">
+          <div className="max-w-3xl">
+            <h3 className="text-4xl font-extrabold">Latest Blog posts</h3>
+            <div className="pt-6">
+              <p class="text-base">
+                For all the latest industry-leading news and advice from the
+                world of HR, Health & Safety, and Employment Law, discover
+                Croner blogs below for expert insights.
+              </p>
+            </div>
+          </div>
+          <h5 className="underline underline-offset-4 hover:text-red text-base font-semibold max-w-sm">
+            View all blog posts &rarr;
+          </h5>
+        </div>
+      </div>
+      <div className="max-w-6xl mx-auto pb-28">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="overflow-hidden">
+            <Link href="/BlogPost">
+              <Image
+                src={maternityImage}
+                className="transition hover:scale-110 duration-300"
+                width={568}
+                alt="text image"
+              />
+              <div className="pt-3 pb-12">
+                <h5 className="text-xl font-semibold py-3">
+                  Statutory Maternity Pay & Leave
+                </h5>
+                <p className="text-sm">
+                  Maternity pay is offered to employees to help them financially
+                  as they raise their new baby.
+                </p>
+                <h5 className="underline underline-offset-2 text-red-600 text-base font-semibold pt-3">
+                  Read this article &rarr;
+                </h5>
+              </div>
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );

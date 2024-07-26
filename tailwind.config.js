@@ -10,7 +10,8 @@ module.exports = {
     },
     fontWeight: {
       semibold: "600",
-      bold: "900",
+      bold: "700",
+      extrabold: "900",
     },
     extend: {
       colors: {

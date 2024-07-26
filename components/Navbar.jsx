@@ -13,21 +13,21 @@ const Navbar = () => {
 
   return (
     <div className="bg-white w-full">
-      <div className="px-24">
+      <div className="max-w-screen-2xl mx-auto">
         <div className="w-full m-auto flex justify-between items-center py-2 primary-color">
           <div className="flex">
             <div className="logo-container flex items-center pr-6">
               <Link href="/">
-                <Image src={logo} alt="logo" width={160} />
+                <Image src={logo} alt="logo" width={140} />
               </Link>
             </div>
           </div>
           <SecondNavbar />
           <div className="">
-            <div className="justify-end fs-xsm hidden md:block">
+            <div className="justify-end text-xs hidden md:block">
               call our free helpline today on:
             </div>
-            <div className="text-red font-bold fs-xl hidden md:block">
+            <div className="text-red font-bold text-2xl hidden md:block">
               0800 141 3912
             </div>
           </div>

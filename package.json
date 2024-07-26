@@ -14,12 +14,13 @@
     "@radix-ui/react-dialog": "^1.0.2",
     "@radix-ui/react-icons": "^1.1.1",
     "@radix-ui/react-navigation-menu": "^1.1.1",
+    "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
     "next": "13.0.4",
     "react": "18.2.0",
+    "react-datocms": "^4.0.7",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
-    "react-live-chat-loader": "^2.8.0",
     "swiper": "^8.4.5"
   },
   "devDependencies": {

@@ -34,13 +34,13 @@ const PricingSinglePage = () => {
           </h3>
         </div>
       </div>
-      <div className="max-w-screen-lg mx-auto py-28">
+      <div className="max-w-screen-lg mx-auto pt-28">
         <h2 className="text-4xl font-bold">
           Text for generating urgency Businesses have to fulfill a number of
           complex obligations and duties in relation to employment law and
           safety. The Croner Complete package will solve your problems
         </h2>
-        <h5 className="text-lg font-bold pt-12">
+        <h5 className="text-base pt-8">
           Text for generating urgency Businesses have to fulfill a number of
           complex obligations and duties in relation to employment law and
           safety. Text for generating urgency Businesses have to fulfill a
@@ -51,13 +51,13 @@ const PricingSinglePage = () => {
         </h5>
       </div>
 
-      <div className="max-w-screen-lg mx-auto">
-        <h3 className="text-4xl font-bold">What's Includes</h3>
+      <div className="max-w-screen-lg mx-auto pt-16">
+        <h3 className="text-4xl font-semibold">What's Includes</h3>
       </div>
-      <div className="max-w-screen-xl mx-auto pt-20 pb-28">
+      <div className="max-w-screen-xl mx-auto pt-16 pb-28">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex flex-col">
-            <h5 className="font-bold mb-2 text-xl uppercase pt-2 pb-1">
+            <h5 className="font-semibold text-xl pt-2 pb-3 px-1.5">
               Employment Law
             </h5>
             <ul className="">
@@ -114,9 +114,7 @@ const PricingSinglePage = () => {
             </ul>
           </div>
           <div className="flex flex-col">
-            <h5 className="font-bold mb-2 text-xl uppercase pt-2 pb-1">
-              HR Law
-            </h5>
+            <h5 className="font-semibold text-xl pt-2 pb-3 px-1.5">HR Law</h5>
             <ul className="">
               <li className="flex justify-between items-start text-base border-b py-3">
                 <span className="px-1.5">Unlimited 24/7 expert HR advice</span>
@@ -177,7 +175,7 @@ const PricingSinglePage = () => {
             </ul>
           </div>
           <div className="flex flex-col">
-            <h5 className="font-bold mb-2 text-xl uppercase pt-2 pb-1">
+            <h5 className="font-semibold text-xl pt-2 pb-3 px-1.5">
               Health & Safety Law
             </h5>
             <ul className="">
@@ -238,25 +236,27 @@ const PricingSinglePage = () => {
         </div>
       </div>
       <div className="w-full">
-        <div className="max-w-screen-lg text-center mx-auto">
-          <h3 className="text-4xl font-bold">Everything under your control</h3>
+        <div className="max-w-screen-lg mx-auto">
+          <h3 className="text-4xl font-semibold">
+            Everything under your control
+          </h3>
         </div>
-        <div className="max-w-screen-xl mx-auto pt-20">
+        <div className="max-w-screen-xl mx-auto pt-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col">
               <Image src={mobilePhone} alt="mobile phone" width={628} />
             </div>
             <div className="flex flex-col justify-center px-12">
-              <h5 class="font-bold mb-2 text-xl uppercase pt-2 pb-1">
-                employee management software
+              <h5 class="font-semibold mb-2 text-2xl  pt-3 pb-3">
+                Employee management software
               </h5>
-              <p className="text-lg pb-3">
+              <p className="text-base pb-3">
                 Need to know who is in work today, even if you are not actually
                 in yourself? Just fire up the free BrightHR app and instantly
                 see who is off sick, who is running late, and whether your staff
                 holiday planner's up to date.
               </p>
-              <ul className="text-base py-6">
+              <ul className="text-base py-3">
                 <li className="flex items-start py-1.5">
                   <div className="border rounded-xl text-green-500 p-0.5">
                     <CheckIcon />
@@ -309,47 +309,30 @@ const PricingSinglePage = () => {
       </div>
       <div className="w-full pt-28">
         <div className="max-w-screen-lg mx-auto">
-          <h3 className="text-4xl font-bold">
+          <h3 className="text-4xl font-semibold">
             We'll tailor the perfect service for your business
           </h3>
-          <div className="pt-12 pb-4">
-            <p className="text-base">
-              *The service pricing is based on our entry level product over a 5
-              year term. Dependent on the industry or your business
-              circumstances and the service term you require, the fee may vary
-              above or below the example fee.
+        </div>
+        <div className="max-w-screen-lg mx-auto">
+          <div className="flex flex-col">
+            <p className="pt-16 text-base">
+              Enter your number of employees and we'll tailor the perfect
+              service for your business. Feel free to call us on{" "}
+              <span className="text-red font-bold">01455 858 132</span> to find
+              out more or get any questions you might have answered by our team.
+              We are happy to help you to succeed
             </p>
           </div>
         </div>
-        <div className="max-w-screen-xl mx-auto pt-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex flex-col w-3/4">
-              <h5 class="font-bold mb-2 text-xl uppercase pt-2 pb-1">
-                Get an Instant quote
-              </h5>
-              <p className="py-3 text-base">
-                Enter your number of employees and we'll tailor the perfect
-                service for your business.
-              </p>
-              <p className="py-3 text-base">
-                Feel free to call us on{" "}
-                <span className="text-red font-bold">01455 858 132</span> to
-                find out more or get any questions you might have answered by
-                our team.
-              </p>
-              <p className="py-3 text-base">
-                We are happy to help you to succeed
-              </p>
-            </div>
+        <div className="max-w-screen-lg flex justify-center mx-auto pt-16">
+          <div className="md:w-2/4">
             <div className="flex flex-col">
-              <div className="w-3/4">
-                <div className="">
-                  <div className="text-6xl font-bold primary-color">
-                    £-.--
-                    <span className="text-sm font-normal text-gray-400">
-                      /mo
-                    </span>
-                  </div>
+              <div className="">
+                <div className="text-6xl font-bold text-center primary-color pb-6">
+                  £-.--
+                  <span className="text-sm font-normal text-gray-400">
+                    /mo
+                  </span>
                   <div className="text-sm text-gray-500">*Per employee</div>
                 </div>
                 <div className="py-3">
@@ -380,6 +363,16 @@ const PricingSinglePage = () => {
             </div>
           </div>
         </div>
+        <div className="max-w-screen-xl mx-auto">
+          <div className="pt-12 pb-4">
+            <p className="text-sm">
+              *The service pricing is based on our entry level product over a 5
+              year term. Dependent on the industry or your business
+              circumstances and the service term you require, the fee may vary
+              above or below the example fee.
+            </p>
+          </div>
+        </div>
       </div>
       <div className="w-full bg-red-dark mt-28">
         <div className="max-w-screen-xl mx-auto py-12">
@@ -391,7 +384,7 @@ const PricingSinglePage = () => {
               <h6 className="text-xs uppercase pb-1 text-white">
                 &bull; Book a <span className="font-bold">free</span> Call
               </h6>
-              <h3 className="text-4xl text-white font-bold pb-3">
+              <h3 className="text-4xl text-white font-semibold pb-3">
                 Speak with an expert
               </h3>
             </div>
@@ -399,8 +392,8 @@ const PricingSinglePage = () => {
         </div>
       </div>
       <div class="max-w-screen-lg mx-auto pt-28 pb-20">
-        <h3 class="text-4xl font-bold ">Our costumers success stories</h3>
-        <h5 className="pt-12 pb-4 max-w-xl">
+        <h3 class="text-4xl font-semibold ">Our costumers success stories</h3>
+        <h5 className="pt-6 max-w-xl">
           Explore how we help award-winning HR, Employment Law, and Health &
           Safety services to business owners and senior leaders.
         </h5>
@@ -411,7 +404,7 @@ const PricingSinglePage = () => {
         </div>
       </div>
       <div className="max-w-screen-xl mx-auto pb-12">
-        <h5 className="max-w-xl pt-12 pb-4">
+        <h5 className="max-w-xl pt-6 pb-4">
           Contact us and{" "}
           <span className="text-sm font-bold text-red uppercase">
             we can help you
