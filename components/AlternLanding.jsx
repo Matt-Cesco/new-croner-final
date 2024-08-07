@@ -12,7 +12,7 @@ const LandingPage = () => {
             <h5 className="text-base font-bold pb-3 text-yellow">
               All Under One Umbrella
             </h5>
-            <h1 className="text-6xl font-extrabold text-white">
+            <h1 className="text-10-50 font-extrabold text-white">
               HR, Employment Law and Health & Safety services
             </h1>
             <div className="flex items-center">
